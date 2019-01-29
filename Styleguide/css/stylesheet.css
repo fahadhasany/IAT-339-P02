@@ -12,7 +12,7 @@ html{
 
 body{
     margin: 0px;  
-    font-family: 'Montserrat',sans-serif; 
+    font-family: 'Open-sans',sans-serif; 
     color: #333333;
 }
 
@@ -22,7 +22,7 @@ body{
 .header{
     text-align: left; 
     padding: 4em; 
-    background-color: #007ACE; 
+    background-color: #AE9267; 
     color: #fff;
 }
 
@@ -145,7 +145,7 @@ Reference: https://stackoverflow.com/questions/43707076/position-sticky-not-work
 }
 
 .sidebar a:hover{ 
-    background-color: #FFC58B;
+    background-color: #D4E5E6;
     border-radius: 10px;
 }
 
@@ -187,7 +187,7 @@ h4{
 }
 
 p{
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.6em; 
     color: #333333; 
 }
@@ -203,7 +203,7 @@ p{
 /*Links*/
 .link{
     text-decoration: none; 
-    color: #007ACE; 
+    color: #B0D0D1; 
     border-bottom: none; 
     transition-property: all; 
     transition-duration: 0.2s; 
@@ -211,7 +211,7 @@ p{
 
 .link:hover{
     padding-bottom: 2px; 
-    border-bottom: 2px solid #007ACE; 
+    border-bottom: 2px solid #B0D0D1; 
 }
 
 /*
@@ -231,16 +231,16 @@ p{
 
 /*Primary button for primary actions*/
 .btn-primary{
-    background-color: #007ACE;
+    background-color: #AE9267;
     color: white; 
-    border: 1px solid #007ACE; 
+    border: 1px solid #AE9267; 
     transition-property: all; 
     transition-duration: 0.2s; 
     box-shadow: 5px 5px 40px #919EAB;
 }
 
 .btn-primary:hover{
-    background-color: #084E8A;
+    background-color: #9E835F;
     color: white; 
     box-shadow: none;
 }
@@ -248,14 +248,15 @@ p{
 /*Secondary button or ghost button for secondary actions*/
 .btn-secondary{
     background-color: inherit;
-    color: #007ACE; 
-    border: 2px solid #007ACE; 
+    color: #AE9267; 
+    border: 2px solid #AE9267; 
     transition-property: all; 
     transition-duration: 0.2s; 
 }
 
 .btn-secondary:hover{
-    background-color: #007ACE; 
+    background-color: #9E835F; 
+    border: 2px solid #AE9267; 
     color: white; 
 }
 
@@ -398,26 +399,30 @@ nav{
 .float-right{
     text-decoration: none; 
     color: #333333; 
+    font-weight: 600;
     border-radius: 10px;
     padding: 1em;
     transition: all 0.5s ease; 
 }
 
 .float-right:hover{
-    background-color: #FFC58B;
+    color: #B0D0D1; 
+    padding-bottom: 2px; 
+    border-bottom: 2px solid #B0D0D1; 
+/*    background-color: #D4E5E6;*/
 }
 
 #logo{
     font-size: 0.8em;
     padding-right: 0.8em;
     border-bottom: none; 
-    color: #333333;
+    color: #919EAB;
     text-decoration: none;
     transition: all 0.2s ease;
 }
 
 #logo:hover{
-    color: #FFC58B
+    color: #B0D0D1; 
 }
 
 /*
@@ -500,40 +505,40 @@ nav{
     width: 100%;
 }
 
-.dark-gray{
-    background-color: #333333; 
+.charcoal{
+    background-color: #38363B; 
 }
 
-.dark-gray > p{
+.charcoal > p{
     color: #FFF;
 }
 
-.gray{
-    background-color: #919EAB;
+.midnight{
+    background-color: #666879;
 }
 
-.gray > p{
+.midnight > p{
     color: #FFF;
 }
 
-.light-gray{
-    background-color: #F4F6F8;
+.london-fog{
+    background-color: #ABB7C9;
 }
 
-.light-gray > p{
+.london-fog > p{
     color: #333333;
 }
 
-.snow{
-    background-color: #FFF;
+.ocean{
+    background-color: #D4E5E6;
 }
 
-.snow > p{
+.ocean > p{
     color: #333333;
 }
 
-.latte{
-    background-color: #FFC58B; 
+.mocha{
+    background-color: #AE9267; 
 }
 
 .blue{
