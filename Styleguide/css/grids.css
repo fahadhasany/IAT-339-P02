@@ -4,6 +4,7 @@
 .row{
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid red;
 }
 
 .column{
@@ -61,6 +62,46 @@ nav{
 nav ul li{
   float: right;
 }
+
+/* .gen-right-align{
+  text-align: right;
+} */
+
+.heroBanner{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url("HeroBanner.jpg");
+  background-size: cover;
+}
+.flex-col{
+  flex:50%;
+  margin-left: 15em;
+  margin-top: 10em;
+}
+
+.featured-prod-col-75{
+  flex: 75%;
+      border: 1px solid red;
+}
+
+.featured-prod-col-25{
+  flex: 25%;
+  border: 1px solid red;
+}
+
+
+.productrow{
+  margin-left: 5em;
+}
+
+.testproductbox{
+  background-color: lightgrey;
+  margin: 2em;
+  height: 500px;
+  width: 300px;
+}
+
 
 
 /*Flex to display an element with code on the side*/
