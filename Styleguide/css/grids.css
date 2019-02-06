@@ -4,7 +4,7 @@
 .row{
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .column{
@@ -82,12 +82,12 @@ nav ul li{
 
 .featured-prod-col-75{
   flex: 75%;
-      border: 1px solid red;
+      /* border: 1px solid red; */
 }
 
 .featured-prod-col-25{
   flex: 25%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 
@@ -102,7 +102,24 @@ nav ul li{
   width: 300px;
 }
 
+.coffeetitle{
+  margin-top: 5em;
+  margin-bottom: -5em;
+}
 
+.coffeefilter{
+  margin-top: 5em;
+}
+
+.coffeeitem-col{
+  display: table;
+  margin: 0 auto;
+}
+
+.filtercol{
+    flex: 10%;
+    padding-top: 1em;
+}
 
 /*Flex to display an element with code on the side*/
 /*Reference: http://jonibologna.com/flexbox-cheatsheet/*/
@@ -116,8 +133,25 @@ nav ul li{
     margin-right: 1em;
 }
 
+.col-70{
+    flex: 70%;
+}
+
 .col-25{
     flex: 20%;
+    margin-left: 1em;
+}
+
+.col-15{
+    flex: 15%;
+}
+
+.col-10{
+    flex: 10%;
+}
+
+.col-30{
+    flex: 30%;
     margin-left: 1em;
 }
 

@@ -12,28 +12,22 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Reference: https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/grids.css">
+
     </head>
     <body>
-        <nav id="nav-sticky">
-            <h1>
-                <a href="index.html" id="logo">Cuppa Café</a>
-            </h1>
-            <ul class="nav-links">
-                <li>
-                    <a href="index.html" class="float-right">Stylesheet</a>
-                </li>
-                <li>
-                    <a href="product.html" class="float-right">Product Page</a>
-                </li>
-                <li>
-                    <a href="checkout.html" class="float-right">Checkout Page</a>
-                </li>
-                <li>
-                    <a href="references.html" class="float-right">References</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="row" style="padding: 2em">
+      <div class="navBar">
+        <a href="#" id="logo">Collective Café<a>
+          <div class="navBarLinks">
+            <a href="#" style="padding-left: 2em;">Shop<a>
+            <a href="#" style="padding-left: 2em;">Classes<a>
+            <a href="#" style="padding-left: 2em;">About Us<a>
+            <a href="#" style="padding-left: 2em;">Contact<a>
+            <a href="#" style="padding-left: 2em;">Cart<a>
+          </div>
+      </div>
+        <div class="row" style="padding: 2em; padding-left: 4em; padding-right: 4em">
             <div class="col-75">
                 <div class="form-container">
                     <div class="row">
@@ -58,13 +52,13 @@
                             </label>
                             <input type="text" placeholder="Surrey">
                             <div class="row">
-                                <div class="form-col-50">
+                                <div class="form-col-align">
                                     <label class="text-input-label">
                                         Province
                                     </label>
                                     <input type="text" placeholder="BC">
                                 </div>
-                                <div class="form-col-50">
+                                <div class="form-col-align formboxspacing">
                                     <label class="text-input-label">
                                         Postal Code
                                     </label>
@@ -93,18 +87,14 @@
                                 Card Number
                             </label>
                             <input type="text" placeholder="1234 1234 1234 1234">
-                            <label class="text-input-label">
-                                Expiry Month
-                            </label>
-                            <input type="text" placeholder="November">
                             <div class="row">
-                                <div class="form-col-50">
+                                <div class="form-col-align">
                                     <label class="text-input-label">
-                                        Expiry Year
+                                        Expiry Date
                                     </label>
-                                    <input type="text" placeholder="2020">
+                                    <input type="text" placeholder="MM/YY">
                                 </div>
-                                <div class="form-col-50">
+                                <div class="form-col-align formboxspacing">
                                     <label class="text-input-label">
                                         CVV
                                     </label>
@@ -124,7 +114,7 @@
                 </div>
             </div>
             <div class="col-25">
-                <div class="form-container">
+                <div class="checkout-container">
                     <p class="checkout-total"> Cart
                         <span class="text-float-right">
                             <i class="fa fa-shopping-cart"></i>
