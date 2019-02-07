@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <title>Collective Café</title>
-      <meta charset="utf-8">
+    <meta charset="utf-8">
 
-      <!--CSS Stylesheet-->
-      <link rel="stylesheet" href="css/stylesheet.css">
-      <link rel="stylesheet" href="css/grids.css">
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/grids.css">
 
-      <!--Reference: https://www.w3schools.com/css/css_icons.asp-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Reference: https://www.w3schools.com/css/css_icons.asp-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      <!--Reference: https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat-->
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">
-  </head>
+    <!--Reference: https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">
+</head>
 
 <body>
-  <div class="navBar">
-    <a href="#" id="logo">Collective Café<a>
-      <div class="navBarLinks">
-        <a href="#" style="padding-left: 2em;">Shop<a>
-        <a href="#" style="padding-left: 2em;">Classes<a>
-        <a href="#" style="padding-left: 2em;">About Us<a>
-        <a href="#" style="padding-left: 2em;">Contact<a>
-        <a href="#" style="padding-left: 2em;">Cart<a>
-      </div>
-  </div>
+    <div class="navBar">
+        <a href="#" id="logo">Collective Café</a>
+        <div class="navBarLinks">
+            <a href="#" style="padding-left: 2em;">Shop</a>
+            <a href="#" style="padding-left: 2em;">Classes</a>
+            <a href="#" style="padding-left: 2em;">About Us</a>
+            <a href="#" style="padding-left: 2em;">Contact</a>
+            <a href="#" style="padding-left: 2em;">Cart</a>
+        </div>
+    </div>
     <!-- <div class="navBar">
         <a href="#" id="logo">Collective Café</a>
         <ul class="nav-links">
@@ -58,5 +58,54 @@
         </ul>
     </div> -->
 
-  </body>
+    <section id="ContactUs-section">
+        <!--  See what other sections did for this part      -->
+        <h2>Contact Us</h2>
+        <div class="row">
+            <div class="col-40">
+                <h6>Our location</h6>
+                <h6>250-13450 102 Ave <br>Surrey, BC V3T 0A3</h6>
+
+            </div>
+            <div class="col-60">
+                <!--
+                <div id="map"></div>
+                
+                <script>
+                    function initMap(){
+                        var location = {lat: 49.187920, lng: -122.848770};
+                        var map = new google.maps.Map(document.getElementById("map"), {zoom: 4, center: location});
+                    }
+                </script>
+-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.730656501649!2d-122.85163034888838!3d49.18669738538661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d9d358d76255%3A0x27cc0a8105206a6c!2sSimon+Fraser+University+-+Surrey+Campus!5e0!3m2!1sen!2sca!4v1549511978521" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-container">
+                <h4>Get in touch!</h4>
+                <div class="row">
+                    <div class="col-50">
+                        <label class="text-input-label">
+                            Name
+                        </label>
+                        <input type="text" placeholder="First&Last Name">
+                    </div>
+                    <div class="col-50">
+                        <label class="text-input-label">
+                            Email
+                        </label>
+                        <input type="text" placeholder="emailname@example.com">
+                    </div>
+
+                    <label class="text-input-label">
+                        Description
+                    </label>
+                    <input type="text" placeholder="emailname@example.com">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>
