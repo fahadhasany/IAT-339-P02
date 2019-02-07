@@ -35,6 +35,14 @@ body{
     color: #FFF;
 }
 
+.shopcoffeeheader{
+  text-align: left;
+  padding: 4em 0em 4em 10em;
+  margin-top: 8em;
+  background-color: #AE9267;
+  color: #fff;
+}
+
 /*CSS for the code, reference: https://stackoverflow.com/questions/2820453/display-html-code-in-html*/
 code{
     padding: 20px;
@@ -73,10 +81,23 @@ h4{
     font-style: italic;
 }
 
+h5{
+    font-weight: 600;
+    font-size: 1em;
+    padding-bottom: 1em;
+}
+
 h6{
-    font-weight: 300;
-    font-size: 1.2em;
+    font-weight: 600;
+    font-size: 1em;
     padding-left: 1rem;
+}
+
+.h7{
+  font-weight: 800;
+  font-size: 3em;
+  color: white;
+  padding-top: 2em;
 }
 
 
@@ -187,9 +208,24 @@ input[type=text]:focus{
     border-radius: 3px;
 }
 
+.checkout-container{
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
 .form-col-50{
     flex: 50%;
     padding: 0 16px;
+}
+
+.form-colalign{
+    flex: 50%;
+}
+
+.formboxspacing{
+    margin-left: 1em;
 }
 
 .icon-container {
@@ -234,11 +270,11 @@ i:hover{
 
 /* The container */
 .radiocontainer {
-  display: block;
+  display: table;
   position: relative;
-  padding-left: 2rem;
+  padding-left: 2.5rem;
   margin-bottom: 1rem;
-  cursor: pointer;
+  margin-top: 1.5rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -321,6 +357,119 @@ ul .alt-h3{
 ul li{
     /*    margin-left: 1em;*/
     /* padding: 15px 15px 0px 0px; */
+}
+
+.filtercol li{
+  list-style: none;
+}
+
+.filtercol ul li{
+  float: left;
+  list-style: none;
+  position: relative;
+
+}
+
+.filtercol ul li ul{
+  display: none;
+  position: absolute;
+  background-color: #D4E5E6;
+  margin-top: -2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  z-index: 10;
+  box-shadow: 4px 4px 10px #ABB7C9;
+  border-radius: 5px 5px 5px 5px;
+}
+
+
+.filtercol ul li ul:hover li{
+  display: block;
+}
+
+.filtercol ul li:hover ul{
+  display: block;
+}
+
+.itemselection{
+  display: flex;
+  flex-direction: column;
+}
+
+.itemselection li{
+  list-style: none;
+  border: 1px solid red;
+}
+
+.itemselection ul li{
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+.itemselection ul li ul{
+  display: none;
+  position: absolute;
+  margin-top: -2em;
+  padding-right: 2em;
+  z-index: 10;
+}
+
+.itemselection ul li:hover ul{
+  display: block;
+}
+
+.coffeeincrease form {
+  width: 18em;
+  margin-left: -5em;
+  text-align: center;
+  margin-top: -2em;
+}
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 30px;
+  padding-top: 5px;
+  text-align: center;
+  vertical-align: middle;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+.coffeeincrease form #decrease {
+  border-radius: 8px 0 0 8px;
+}
+
+.coffeeincrease form #increase {
+  border-radius: 0 8px 8px 0;
+}
+
+.coffeeincrease input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+.coffeeincrease input[type=number]::-webkit-inner-spin-button,
+.coffeeincrease input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .float-right{
@@ -409,6 +558,8 @@ ul li{
     transition: all 0.5s ease;
     border-radius: 10px 10px 10px 10px;
     margin: 1em;
+    margin-left: 4em;
+    margin-right: 4em;
 }
 
 .wrapper:hover{
@@ -571,6 +722,21 @@ ul li{
     height: 100%;
     padding: 0px;
     margin: 0px;
+}
+
+.btn-add-to-cart{
+  background-color: #AE9267;
+  color: white;
+  border: 1px solid #AE9267;
+  margin-top: 0;
+  margin-bottom: 0;
+  box-shadow: 5px 5px 40px #919EAB;
+}
+
+.btn-add-to-cart:hover{
+    background-color: #9E835F;
+    color: white;
+    box-shadow: none;
 }
 
 /*
