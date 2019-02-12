@@ -170,6 +170,25 @@ text-align: right;
   padding: 0;
 }
 
+.productdetailsrow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    border: 1px solid red;
+}
+
+.productdetailsrow hr{
+  display: block;
+  height: 1px;
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #666879;
+  margin: 1em 0;
+  padding: 0;
+}
+
 .coffeefilter{
   margin-top: 5em;
 }
