@@ -144,9 +144,8 @@ p{
     text-align: center;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 100px;
+    border-radius: 10px;
     min-width: 200px;
-    margin: 5em 1em 2em 0;
 }
 
 /*Primary button for primary actions*/
@@ -156,7 +155,7 @@ p{
     border: 1px solid #AE9267;
     transition-property: all;
     transition-duration: 0.2s;
-    box-shadow: 5px 5px 40px #919EAB;
+    /*    box-shadow: 5px 5px 40px #919EAB;*/
 }
 
 .btn-primary:hover{
@@ -337,6 +336,16 @@ i:hover{
 
 
 /*Images*/
+
+.print-img{
+    transition: all 0.2s ease; 
+}
+
+.print-img:hover{
+    -webkit-box-shadow: 10px 10px 28px -13px rgba(110,110,110,1);
+    -moz-box-shadow: 10px 10px 28px -13px rgba(110,110,110,1);
+    box-shadow: 10px 10px 28px -13px rgba(110,110,110,1);
+}
 
 .img{
     height: auto;
@@ -539,29 +548,29 @@ border-bottom: 2px solid #B0D0D1;
 
 /*
 .navbar-link-margin > a{
-    text-decoration: none;
-    color: rgba(0,0,0,.4);
-    z-index: 1;
-    padding-bottom: 0.6rem; 
+text-decoration: none;
+color: rgba(0,0,0,.4);
+z-index: 1;
+padding-bottom: 0.6rem; 
 }
 
 .navbar-link-margin > a:before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background: #38363B;
-    visibility: hidden;
-    border-radius: 5px;
-    transform: scaleX(0);
-    transition: .25s linear;
+content: "";
+position: absolute;
+width: 100%;
+height: 3px;
+bottom: 0;
+left: 0;
+background: #38363B;
+visibility: hidden;
+border-radius: 5px;
+transform: scaleX(0);
+transition: .25s linear;
 }
 
 .navbar-link-margin > a:hover:before, .navbar-link-margin > a:focus:before{
-    visibility: visible;
-    transform: scaleX(1);
+visibility: visible;
+transform: scaleX(1);
 }
 */
 
@@ -644,9 +653,11 @@ border-bottom: 2px solid #B0D0D1;
 .product-print{
     position: relative;
     /*    width: 50%;*/
+    /*
     width: 300px;
     height: 100%;
-    margin: 1em;
+    */
+    /*    margin: 1em;*/
 }
 
 .product-print:hover .product-print-image{
@@ -861,6 +872,10 @@ footer img{
 
 /*https://medium.com/@union_io/swapping-fill-color-on-image-tag-svgs-using-css-filters-fa4818bf7ec6*/
 /*https://www.w3schools.com/cssref/playit.asp?filename=playcss_filter&preval=opacity(30%25)*/
+
+.svg{
+    transition: all 0.3s ease; 
+}
 .svg:hover{
     cursor: pointer;
     filter: invert(100%);

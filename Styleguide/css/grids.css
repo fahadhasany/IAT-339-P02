@@ -334,8 +334,9 @@ Reference: https://stackoverflow.com/questions/43707076/position-sticky-not-work
 }
 
 .shop-class-col-60{
-    flex: 60%; 
-    padding: 2em; 
+    flex: 60%;
+    padding-top: 1em;
+    padding-left: 3em;
 }
 
 .shop-class-col-40 img{
@@ -401,4 +402,34 @@ iframe {
     margin-right: auto;
     margin-top: 2em;
     margin-bottom: 2em;
+}
+
+
+/*Shop Prints*/
+/*https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery*/
+.print-columns{
+    flex: 25%;
+    max-width: 25%; 
+    padding: 0 4px; 
+}
+
+.print-columns img{
+    vertical-align: middle; 
+    margin-top: 1em; 
+}
+
+
+/*Media Queries*/
+@media screen and (max-width: 800px){
+    .print-columns{
+        flex: 50%; 
+        max-width: 50%; 
+    }
+}
+
+@media screen and (max-width: 600px){
+    .print-columns{
+        flex: 100%; 
+        max-width: 100%; 
+    }
 }
