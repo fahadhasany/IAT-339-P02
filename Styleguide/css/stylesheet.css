@@ -11,8 +11,8 @@ html{
 }
 
 @font-face{
-    font-family: Avenir; 
-    src: url(fonts/Avenir.ttc); 
+    font-family: Avenir;
+    src: url(fonts/Avenir.ttc);
 }
 
 body{
@@ -102,7 +102,7 @@ h6{
     font-weight: 800;
     font-size: 3em;
     color: white;
-    padding-top: 2em;
+    padding-top: 0.8em;
 }
 
 
@@ -338,7 +338,7 @@ i:hover{
 /*Images*/
 
 .print-img{
-    transition: all 0.2s ease; 
+    transition: all 0.2s ease;
 }
 
 .print-img:hover{
@@ -551,7 +551,7 @@ border-bottom: 2px solid #B0D0D1;
 text-decoration: none;
 color: rgba(0,0,0,.4);
 z-index: 1;
-padding-bottom: 0.6rem; 
+padding-bottom: 0.6rem;
 }
 
 .navbar-link-margin > a:before{
@@ -851,30 +851,30 @@ transform: scaleX(1);
 *=== Footer ===
 */
 footer{
-    background-color: #AE9267; 
+    background-color: #AE9267;
 }
 
 .footer-section-title{
-    font-family: 'Avenir-Black', sans-serif; 
+    font-family: 'Avenir-Black', sans-serif;
     font-weight: 600;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 .footer-address{
-    font-style: italic; 
+    font-style: italic;
 }
 
 footer img{
-    display: inline; 
-    height: 2em; 
-    margin-right: 1em; 
+    display: inline;
+    height: 2em;
+    margin-right: 1em;
 }
 
 /*https://medium.com/@union_io/swapping-fill-color-on-image-tag-svgs-using-css-filters-fa4818bf7ec6*/
 /*https://www.w3schools.com/cssref/playit.asp?filename=playcss_filter&preval=opacity(30%25)*/
 
 .svg{
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 .svg:hover{
     cursor: pointer;
