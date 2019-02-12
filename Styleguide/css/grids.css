@@ -10,22 +10,22 @@
     border: 1px solid red;
 }
 
-.row hr{
-  display: block;
-  height: 1px;
-  width: 100%;
-  border: 0;
-  border-top: 1px solid #666879;
-  margin: 1em 0;
-  padding: 0;
+.row hr {
+    display: block;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #666879;
+    margin: 1em 0;
+    padding: 0;
 }
 
-.column{
+.column {
     flex-direction: column;
     flex: 33%;
 }
 
-.navBar{
+.navBar {
     display: flex;
     align-items: center;
     width: 100%;
@@ -54,7 +54,7 @@ nav {
     z-index: 1;
 }
 
-#logo{
+#logo {
     font-size: 1.5em;
     font-weight: 600;
     margin: 0;
@@ -72,7 +72,7 @@ nav {
     text-align: right;
 }
 
-nav ul li{
+nav ul li {
     float: right;
 }
 
@@ -80,7 +80,7 @@ nav ul li{
 text-align: right;
 } */
 
-.heroBanner{
+.heroBanner {
     display: flex;
     width: 100%;
     height: 100vh;
@@ -88,107 +88,136 @@ text-align: right;
     background-size: cover;
 }
 
-.shopcoffee-herobanner{
+.shopcoffee-herobanner {
     display: flex;
+    /*
     width: 100%;
-    height: 100vh;
-    background-image: url("coffee3-edited.jpg");
+    height: 80vh;
+*/
+    background-image: url("ShopCoffee_Header.jpeg");
+    /*
+    background-size: cover;*/
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
-.flex-col{
-    flex:50%;
+.coffeeclass-herobanner{
+    display: flex;
+    background-image: url("CoffeeClass_Header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.contactus-herobanner{
+    display: flex;
+    background-image: url("ContactUs_Header.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.flex-col {
+    flex: 50%;
     margin-left: 15em;
     margin-top: 10em;
 }
 
-.featured-prod-col-75{
+.featured-prod-col-75 {
     flex: 75%;
     border: 1px solid red;
 }
 
-.featured-prod-col-25{
+.featured-prod-col-25 {
     flex: 25%;
     border: 1px solid red;
 }
 
 
-.productrow{
+.productrow {
     margin-left: 5em;
     margin-right: 5em;
 }
 
-.testproductbox{
+.testproductbox {
     background-color: lightgrey;
     margin: 2em;
     height: 500px;
     width: 300px;
 }
 
-.coffeetitle{
-  margin-top: 5em;
-  margin-bottom: -5em;
+.coffeetitle {
+    margin-top: 5em;
+    margin-bottom: -5em;
 }
 
-.coffeefilter{
-  margin-top: 5em;
+.coffeefilter {
+    margin-top: 5em;
 }
 
-.coffeeitem-col{
-  display: table;
-  margin: 0 auto;
+.coffeeitem-col {
+    display: table;
+    margin: 0 auto;
+    
+ 
 }
 
-.coffeeitemtitle-col{
-  display: table;
-  margin: 0 auto;
-  margin-bottom: -3em;
+.coffeeitemtitle-col {
+    display: table;
+    margin: 0 auto;
+    margin-bottom: -3em;
 }
 
-.filtercol{
+.filtercol {
     flex: 10%;
     padding-top: 1em;
 }
 
-.generictoppad{
-  padding-top: 5em;
+.generictoppad {
+    padding-top: 5em;
 }
 
-.producttextcol{
-  flex: 21%;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-top: 8em;
-  margin-bottom: 20em;
-          border: 1px solid red;
+.producttextcol {
+    flex: 21%;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 8em;
+    margin-bottom: 20em;
+    border: 1px solid red;
 }
 
-.product-col-60{
-  flex: 39%;
-          border: 1px solid red;
+.product-col-60 {
+    flex: 39%;
+    border: 1px solid red;
 }
 
-.productinputcol{
-  flex: 29%;
-          border: 1px solid red;
+.productinputcol {
+    flex: 29%;
+    border: 1px solid red;
 }
 
-.producttextcol hr{
-  display: block;
-  height: 1px;
-  width: 30%;
-  border: 0;
-  border-top: 1px solid #666879;
-  margin: 1em 0;
-  padding: 0;
+.producttextcol hr {
+    display: block;
+    height: 1px;
+    width: 30%;
+    border: 0;
+    border-top: 1px solid #666879;
+    margin: 1em 0;
+    padding: 0;
 }
 
-.producttextcol p{
-  opacity: 0.8;
+.producttextcol p {
+    opacity: 0.8;
 }
 
-.billingalignment{
-  margin-left: 0;
+.billingalignment {
+    margin-left: 0;
 }
 
 /*Flex to display an element with code on the side*/
@@ -201,40 +230,39 @@ text-align: right;
 .col-75 {
     flex: 70%;
     margin-right: 1em;
-        border: 1px solid red;
+    border: 1px solid red;
 }
 
-.col-70{
+.col-70 {
     flex: 70%;
 }
 
-.col-25{
+.col-25 {
     flex: 20%;
     margin-left: 1em;
-        border: 1px solid red;
+    border: 1px solid red;
 }
 
-.col-15{
+.col-15 {
     flex: 15%;
 }
 
-.col-10{
+.col-10 {
     flex: 8%;
 }
 
-.col-13{
+.col-13 {
     flex: 13%;
 }
 
-.col-30{
+.col-30 {
     flex: 30%;
     margin-left: 1em;
 }
 
-.col-40{
-    flex:40%;
-    margin-top: 2em
-            border: 1px solid red;
+.col-40 {
+    flex: 40%;
+    margin-top: 2em border: 1px solid red;
 }
 
 .col-50 {
@@ -320,30 +348,31 @@ Reference: https://stackoverflow.com/questions/43707076/position-sticky-not-work
 }
 
 /*Class product cards*/
-.shop-class-container{
+.shop-class-container {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     width: 100%;
-    height: 20em; 
-    border: 1px solid black; 
-    border-radius: 10px; 
+    height: 20em;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
-.shop-class-col-40{
-    flex: 40%; 
+.shop-class-col-40 {
+    flex: 40%;
 }
 
-.shop-class-col-60{
+.shop-class-col-60 {
     flex: 60%;
     padding-top: 1em;
     padding-left: 3em;
 }
 
-.shop-class-col-40 img{
-    width: 100%; 
-    height: 100%; 
+.shop-class-col-40 img {
+    width: 100%;
+    height: 100%;
     border-radius: 10px 0px 0px 10px;
 }
+
 /*Rajvir's add-ins*/
 
 .quotation-img {
@@ -407,29 +436,29 @@ iframe {
 
 /*Shop Prints*/
 /*https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery*/
-.print-columns{
+.print-columns {
     flex: 25%;
-    max-width: 25%; 
-    padding: 0 4px; 
+    max-width: 25%;
+    padding: 0 4px;
 }
 
-.print-columns img{
-    vertical-align: middle; 
-    margin-top: 1em; 
+.print-columns img {
+    vertical-align: middle;
+    margin-top: 1em;
 }
 
 
 /*Media Queries*/
-@media screen and (max-width: 800px){
-    .print-columns{
-        flex: 50%; 
-        max-width: 50%; 
+@media screen and (max-width: 800px) {
+    .print-columns {
+        flex: 50%;
+        max-width: 50%;
     }
 }
 
-@media screen and (max-width: 600px){
-    .print-columns{
-        flex: 100%; 
-        max-width: 100%; 
+@media screen and (max-width: 600px) {
+    .print-columns {
+        flex: 100%;
+        max-width: 100%;
     }
 }
