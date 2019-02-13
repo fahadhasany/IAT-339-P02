@@ -581,6 +581,7 @@ transform: scaleX(1);
     color: #919EAB;
     text-decoration: none;
     transition: all 0.2s ease;
+    flex:1;
 }
 
 #logo:hover{
@@ -783,6 +784,15 @@ transform: scaleX(1);
     box-shadow: none;
 }
 
+.ham-nav-menu nav{
+  display:none;
+  /* display: flex;
+  flex-direction: column; */
+  /* flex-wrap: wrap;
+  width: 100%;
+  background-color: #FFF; */
+}
+
 /*
 *=== Colour Palette ===
 */
@@ -905,4 +915,120 @@ footer img{
     .col-50{
         flex: 0 1 auto;
     }
+}
+
+@media screen and (max-width: 720px){
+  /*Charles Additions February 12th*/
+
+  .navBarLinks{
+    display: none;
+  }
+
+  .menucontainer {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ABB7C9;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change .bar2 {opacity: 0;}
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .ham-nav-menu nav{
+    display:flex;
+    flex:1;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap;
+    width: 100%;
+    background-color: #FFF; */
+  }
+
+  #logo{
+    flex:1;
+  }
+
+  .main-navigation{
+    z-index: 10;
+    width: 100%;
+    background-color: #fff;
+    height: 4em;
+    color: #FFF;
+  }
+
+  .main-navigation .menucontainer{
+    float:left;
+    height: 4em;
+    padding: 15px;
+  }
+
+  .ham-nav-menu nav ul{
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+  }
+
+  .ham-nav-menu nav ul li{
+    float: left;
+    list-style: none;
+  }
+
+  .hamburger-item{
+    display: inline-block;
+    height: 4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color:#444;
+    text-decoration: none;
+  }
+
+  .nav-content{
+    position:absolute;
+    top: 4em;
+    overflow: hidden;
+    background-color: #ABB7C9;
+    max-height: 0;
+  }
+
+  .nav-content:hover{
+      max-height: 400px;
+  }
+
+  .nav-sub{
+    padding: 1em;
+  }
+
+  .nav-sub ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+  }
+
+  .nav-sub ul li a{
+    display:inline-block;
+    padding: 5px 0px;
+    text-decoration: none;
+  }
+
+  .hamburger-item:focus ~ .nav-content{
+    max-height: 400px;
+    -webkit-transition:max-height 0.4s ease-in;
+    -moz-transition:max-height 0.4s ease-in;
+    transition:max-height 0.4s ease-in;
+  }
 }
