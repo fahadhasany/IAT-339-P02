@@ -492,3 +492,43 @@ iframe {
         max-width: 100%;
     }
 }
+
+@media screen and (max-width: 1100px){
+  .product-col-60{
+    flex: 1;
+    order: 1;
+  }
+  .col-10{
+    flex: 0;
+  }
+  .productdetailsrow{
+    flex-direction: column;
+  }
+  .producttextcol{
+    margin-top: 1em;
+    flex: 1;
+    order: 2;
+  }
+  .productinputcol{
+    margin-top: -19em;
+    order: 3;
+    flex: 1;
+    float: none;
+    text-align: center;
+  }
+
+  .coffeeincrease{
+    float: none;
+    text-align: center;
+    width: 8em;
+    margin: 0 auto;
+  }
+
+  .itemselection{
+    float: none;
+    text-align: center;
+    width: 8em;
+    margin: 0 auto;
+  }
+
+}
