@@ -88,6 +88,9 @@ text-align: right;
     background-image: url("HeroBanner.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .shopcoffee-herobanner{
@@ -119,8 +122,18 @@ text-align: right;
     position: relative;
 }
 
-.flex-col{
-    flex:50%;
+.aboutus-herobanner{
+    display: flex;
+    background-image: url("AboutUs_Header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.flex-col {
+    flex: 50%;
     margin-left: 15em;
     margin-top: 10em;
 }
@@ -148,9 +161,15 @@ text-align: right;
     width: 300px;
 }
 
-.coffeetitle{
-  margin-top: 5em;
-  margin-bottom: -5em;
+.homepageproduct{
+    margin: 2em;
+    width: 100%;
+    height: auto;
+}
+
+.coffeetitle {
+    margin-top: 5em;
+    margin-bottom: -5em;
 }
 
 /* CHARLES CHANGES STARTING FEBRUARY 12TH */
