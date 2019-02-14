@@ -585,6 +585,7 @@ iframe {
     order: 2;
   }
   .productinputcol{
+    padding-top: 1em;
     margin-top: -19em;
     order: 3;
     flex: 1;
