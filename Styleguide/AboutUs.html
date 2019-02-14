@@ -16,15 +16,80 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">
 </head>
 
-<body>
-    <div class="navBar">
-        <a href="HomePage.html" id="logo">Collective Café</a>
-        <div class="navBarLinks">
-            <a href="Shop-Coffee.html" style="padding-left: 2em;">Shop</a>
-            <a href="Classes.html" style="padding-left: 2em;">Classes</a>
-            <a href="AboutUs.html" style="padding-left: 2em;">About Us</a>
-            <a href="Contact.html" style="padding-left: 2em;">Contact</a>
-            <a href="Cart.html" style="padding-left: 2em;">Cart</a>
+    <body>
+        <!--Nav Bar-->
+        <div class="navBar">
+            <a href="HomePage.html" id="logo">Collective Café</a>
+            <div class="navBarLinks">
+                <a href="Shop-Coffee.html" style="padding-left: 2em;">Shop</a>
+                <a href="Classes.html" style="padding-left: 2em;">Classes</a>
+                <a href="AboutUs.html" style="padding-left: 2em;">About Us</a>
+                <a href="Contact.html" style="padding-left: 2em;">Contact</a>
+                <a href="Cart.html" style="padding-left: 2em;">Cart</a>
+            </div>
+
+            <!--
+<div class="ham-nav-menu">
+<nav class ="main-navigation" role="navigation">
+<ul>
+<li>
+<a href="#" class="hamburger-item">
+<div class="menucontainer" onclick="myFunction(this)">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
+</a>
+<div class="nav-content">
+<div class="nav-sub">
+<ul>
+<li><a href="Shop-Coffee.html">Shop</a></li>
+<li><a href="Classes.html">Classes</a></li>
+<li><a href="AboutUs.html">About Us</a></li>
+<li><a href="Contact.html">Contact</a></li>
+<li><a href="Cart.html">Cart</a></li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+-->
+
+            <div id="menuToggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="Shop-Coffee.html">
+                        <li>
+                            Shop
+                        </li>
+                    </a>
+                    <a href="Classes.html">
+                        <li>
+                            Classes
+                        </li>
+                    </a>
+                    <a href="AboutUs.html">
+                        <li>
+                            About us
+                        </li>
+                    </a>
+                    <a href="Contact.html">
+                        <li>
+                            Contact
+                        </li>
+                    </a>
+                    <a href="Cart.html">
+                        <li>
+                            Cart
+                        </li>
+                    </a>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -61,9 +126,46 @@
         <div class="row">
             <img src="Images/AboutUs_Partnership.jpeg" alt="partnership-img" class="partnership-img">
 
-            <h3 style="padding-left: 3em"> The Collective Café Partnership</h3>
-            <p class="aboutus-para">The Collective Café takes pride in partnering with local companies to source their beans and every product used in the café. Not only do they partner with local companies, local artist are able to showcase their work at the café and sell their work. The Collective Café believes it is important that the community helps one another.  </p>
-        </div>
-    </section>
-</body>
+                <h3 style="padding-left: 3em"> The Collective Café Partnership</h3>
+                <p class="aboutus-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-col-30">
+                <p class="footer-section-title">
+                    Location
+                </p>
+                <p class="footer-address">
+                    689 Thurlow St. Vancouver, BC Canada V6E 4M3
+                </p>
+                <p>
+                    Our new downtown Vancouver location is now open! In addition to delicious coffee and Lucky's Doughnuts, we are thrilled to reveal a new brunch menu.
+                </p>
+            </div>
+            <div class="footer-col-30">
+                <p class="footer-section-title">
+                    Contact
+                </p>
+                <p>
+                    Have a question, comment or concern?
+                </p>
+                <p>
+                    <strong>Email:</strong> collective@cafe.com
+                <p>
+                    <strong>Phone:</strong> 604 123 1234
+                </p>
+            </div>
+            <div class="footer-col-30">
+                <p class="footer-section-title">
+                    social media
+                </p>
+                <p>
+                    Follow us on social media for more amazing content daily! We even have chances to win some amazing prizes such as free classes.
+                </p>
+                <img src="Images/facebook.svg" class="svg">
+                <img src="Images/instagram.svg" class="svg">
+                <img src="Images/twitter.svg" class="svg">
+            </div>
+        </footer>
+    </body>
 </html>

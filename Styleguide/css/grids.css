@@ -8,6 +8,7 @@
     margin-left: 2em;
     margin-right: 2em;
     border: 1px solid red;
+    justify-content: flex-start; 
 }
 
 .row hr{
@@ -95,11 +96,12 @@ text-align: right;
 .shopcoffee-herobanner{
     display: flex;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding-bottom: 38em;
     background-image: url("ShopCoffee_Header.jpeg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center; 
 }
 
 .coffeeclass-herobanner{
@@ -177,6 +179,7 @@ text-align: right;
     margin-top: 2em;
     margin-left: 2em;
     margin-right: 2em;
+    justify-content: center; 
     border: 1px solid red;
 }
 
@@ -399,7 +402,41 @@ Reference: https://stackoverflow.com/questions/43707076/position-sticky-not-work
 }
 
 /*Class product cards*/
-.shop-class-container{
+
+.shop-class-row{
+    display: flex; 
+    flex-wrap: wrap; 
+    margin: 2em 2em 0 2em; 
+}
+
+.shop-class-col-50{
+    flex: 50%; 
+}
+
+.class-container{
+    flex-direction: column; 
+    margin: 2em; 
+    max-width: 100px; 
+}
+
+.class-wrapper{
+    width: 20em;
+    height: auto;
+    position: relative;
+    transform: scale(0.95);
+    transition: all 0.5s ease;
+    border-radius: 10px 10px 10px 10px;
+    margin: 1em;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.class-container img{
+    height: 100%; 
+    width: auto;
+}
+
+.shop-class-container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -418,9 +455,15 @@ Reference: https://stackoverflow.com/questions/43707076/position-sticky-not-work
     padding-left: 3em;
 }
 
-.shop-class-col-40 img{
-    width: 100%;
-    height: 100%;
+.shop-class-col-40 img { 
+    width: 100%; 
+    height: 100%; 
+    display: block; 
+/*
+    object-fit: fill; 
+    overflow: hidden; 
+*/
+    
     border-radius: 10px 0px 0px 10px;
 }
 /*Rajvir's add-ins*/
@@ -497,12 +540,29 @@ iframe {
     margin-top: 1em;
 }
 
+@media screen and (max-width: 900px){
+    .shopcoffeerow{
+        justify-content: center; 
+    }
+    
+    .wrapper{ 
+        margin: 1em;
+    }
+}
 
 /*Media Queries*/
 @media screen and (max-width: 800px){
     .print-columns{
         flex: 50%;
         max-width: 50%;
+    }
+    
+    .shopcoffeerow{
+        justify-content: center; 
+    }
+    
+    .wrapper{
+        margin: 1em; 
     }
 }
 
@@ -511,4 +571,59 @@ iframe {
         flex: 100%;
         max-width: 100%;
     }
+    
+    .shop-class-col-40{
+        flex: 100%; 
+    }
+    
+    .shop-class-col-40 img{
+        height: 100%;
+        width: auto; 
+    }
+    
+    .shop-class-col-60{
+        flex: 100%; 
+    }
+    
+}
+
+@media screen and (max-width: 1100px){
+  .product-col-60{
+    flex: 1;
+    order: 1;
+  }
+  .col-10{
+    flex: 0;
+  }
+  .productdetailsrow{
+    flex-direction: column;
+  }
+  .producttextcol{
+    margin-top: 1em;
+    flex: 1;
+    order: 2;
+  }
+  .productinputcol{
+    padding-top: 1em;
+    margin-top: -19em;
+    order: 3;
+    flex: 1;
+    float: none;
+    text-align: center;
+  }
+
+  .coffeeincrease{
+    float: none;
+    text-align: center;
+    width: 8em;
+    margin: 0 auto;
+  }
+
+  .itemselection{
+    float: none;
+    text-align: center;
+    width: 8em;
+    margin: 0 auto;
+  }
+
 }
