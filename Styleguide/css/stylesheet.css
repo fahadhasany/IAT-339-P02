@@ -930,9 +930,15 @@ footer img{
     #menuToggle{
         display: none; 
     }
+
 }
 
 @media screen and (max-width: 720px){
+    .footer-col-30{
+        flex: 100%;
+        padding: 1em 2em 1em 2em; 
+    }
+
     /*Charles Additions February 12th*/
 
     .navBarLinks{
@@ -1048,7 +1054,7 @@ footer img{
         transition:max-height 0.4s ease-in;
     }
 
-/*https://codepen.io/erikterwan/pen/grOZxx*/
+    /*https://codepen.io/erikterwan/pen/grOZxx*/
     #menuToggle{
         display: block;
         position: absolute; 
@@ -1136,7 +1142,7 @@ footer img{
         padding: 50px;
         padding-top: 130px;
         right: -100px;
-         
+
 
         background: #ededed;
         list-style-type: none;
@@ -1164,13 +1170,13 @@ footer img{
         transform: scale(1.0, 1.0);
         opacity: 1;
     }
-    
+
     #menu a{
         color: black; 
         text-decoration: none; 
         transition: all 1s ease; 
     }
-    
+
     #menu a:hover{
         text-decoration: underline; 
     }

@@ -87,6 +87,7 @@ text-align: right;
     height: 100vh;
     background-image: url("HeroBanner.jpg");
     background-size: cover;
+    background-position: center; 
 }
 
 .shopcoffee-herobanner{
