@@ -852,6 +852,14 @@ transform: scaleX(1);
 */
 footer{
     background-color: #AE9267; 
+    display: flex; 
+    flex-wrap: wrap; 
+    margin-top: 2em;  
+}
+
+.footer-col-30{
+    flex: 33.3%; 
+    padding: 2em; 
 }
 
 .footer-section-title{
