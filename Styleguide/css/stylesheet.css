@@ -11,8 +11,8 @@ html{
 }
 
 @font-face{
-    font-family: Avenir; 
-    src: url(fonts/Avenir.ttc); 
+    font-family: Avenir;
+    src: url(fonts/Avenir.ttc);
 }
 
 body{
@@ -102,7 +102,7 @@ h6{
     font-weight: 800;
     font-size: 3em;
     color: white;
-    padding-top: 2em;
+    padding-top: 0.8em;
 }
 
 
@@ -338,7 +338,7 @@ i:hover{
 /*Images*/
 
 .print-img{
-    transition: all 0.2s ease; 
+    transition: all 0.2s ease;
 }
 
 .print-img:hover{
@@ -551,7 +551,7 @@ border-bottom: 2px solid #B0D0D1;
 text-decoration: none;
 color: rgba(0,0,0,.4);
 z-index: 1;
-padding-bottom: 0.6rem; 
+padding-bottom: 0.6rem;
 }
 
 .navbar-link-margin > a:before{
@@ -581,6 +581,7 @@ transform: scaleX(1);
     color: #919EAB;
     text-decoration: none;
     transition: all 0.2s ease;
+    flex:1;
 }
 
 #logo:hover{
@@ -783,6 +784,15 @@ transform: scaleX(1);
     box-shadow: none;
 }
 
+.ham-nav-menu nav{
+  display:none;
+  /* display: flex;
+  flex-direction: column; */
+  /* flex-wrap: wrap;
+  width: 100%;
+  background-color: #FFF; */
+}
+
 /*
 *=== Colour Palette ===
 */
@@ -863,26 +873,26 @@ footer{
 }
 
 .footer-section-title{
-    font-family: 'Avenir-Black', sans-serif; 
+    font-family: 'Avenir-Black', sans-serif;
     font-weight: 600;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 .footer-address{
-    font-style: italic; 
+    font-style: italic;
 }
 
 footer img{
-    display: inline; 
-    height: 2em; 
-    margin-right: 1em; 
+    display: inline;
+    height: 2em;
+    margin-right: 1em;
 }
 
 /*https://medium.com/@union_io/swapping-fill-color-on-image-tag-svgs-using-css-filters-fa4818bf7ec6*/
 /*https://www.w3schools.com/cssref/playit.asp?filename=playcss_filter&preval=opacity(30%25)*/
 
 .svg{
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 .svg:hover{
     cursor: pointer;
@@ -913,4 +923,120 @@ footer img{
     .col-50{
         flex: 0 1 auto;
     }
+}
+
+@media screen and (max-width: 720px){
+  /*Charles Additions February 12th*/
+
+  .navBarLinks{
+    display: none;
+  }
+
+  .menucontainer {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ABB7C9;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change .bar2 {opacity: 0;}
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  .ham-nav-menu nav{
+    display:flex;
+    flex:1;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap;
+    width: 100%;
+    background-color: #FFF; */
+  }
+
+  #logo{
+    flex:1;
+  }
+
+  .main-navigation{
+    z-index: 10;
+    width: 100%;
+    background-color: #fff;
+    height: 4em;
+    color: #FFF;
+  }
+
+  .main-navigation .menucontainer{
+    float:left;
+    height: 4em;
+    padding: 15px;
+  }
+
+  .ham-nav-menu nav ul{
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+  }
+
+  .ham-nav-menu nav ul li{
+    float: left;
+    list-style: none;
+  }
+
+  .hamburger-item{
+    display: inline-block;
+    height: 4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color:#444;
+    text-decoration: none;
+  }
+
+  .nav-content{
+    position:absolute;
+    top: 4em;
+    overflow: hidden;
+    background-color: #ABB7C9;
+    max-height: 0;
+  }
+
+  .nav-content:hover{
+      max-height: 400px;
+  }
+
+  .nav-sub{
+    padding: 1em;
+  }
+
+  .nav-sub ul{
+    padding:0;
+    margin:0;
+    list-style: none;
+  }
+
+  .nav-sub ul li a{
+    display:inline-block;
+    padding: 5px 0px;
+    text-decoration: none;
+  }
+
+  .hamburger-item:focus ~ .nav-content{
+    max-height: 400px;
+    -webkit-transition:max-height 0.4s ease-in;
+    -moz-transition:max-height 0.4s ease-in;
+    transition:max-height 0.4s ease-in;
+  }
 }
