@@ -92,11 +92,12 @@ text-align: right;
 .shopcoffee-herobanner{
     display: flex;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding-bottom: 38em;
     background-image: url("ShopCoffee_Header.jpeg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center; 
 }
 
 .coffeeclass-herobanner{
@@ -158,6 +159,7 @@ text-align: right;
     margin-top: 2em;
     margin-left: 2em;
     margin-right: 2em;
+    justify-content: center; 
     border: 1px solid red;
 }
 
@@ -518,12 +520,29 @@ iframe {
     margin-top: 1em;
 }
 
+@media screen and (max-width: 900px){
+    .shopcoffeerow{
+        justify-content: center; 
+    }
+    
+    .wrapper{ 
+        margin: 1em;
+    }
+}
 
 /*Media Queries*/
 @media screen and (max-width: 800px){
     .print-columns{
         flex: 50%;
         max-width: 50%;
+    }
+    
+    .shopcoffeerow{
+        justify-content: center; 
+    }
+    
+    .wrapper{
+        margin: 1em; 
     }
 }
 
@@ -545,4 +564,5 @@ iframe {
     .shop-class-col-60{
         flex: 100%; 
     }
+    
 }

@@ -20,274 +20,311 @@
         <!--Nav Bar-->
         <div class="navBar">
             <a href="HomePage.html" id="logo">Collective Café</a>
-              <div class="navBarLinks">
-                  <a href="Shop-Coffee.html" style="padding-left: 2em;">Shop</a>
-                  <a href="Classes.html" style="padding-left: 2em;">Classes</a>
-                  <a href="AboutUs.html" style="padding-left: 2em;">About Us</a>
-                  <a href="Contact.html" style="padding-left: 2em;">Contact</a>
-                  <a href="Cart.html" style="padding-left: 2em;">Cart</a>
-              </div>
-
-            <div class="ham-nav-menu">
-              <nav class ="main-navigation">
-                <ul>
-                  <li>
-                    <a href="#" class="hamburger-item">
-                      <div class="menucontainer" onclick="myFunction(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                      </div>
-                    </a>
-                    <div class="nav-content">
-                      <div class="nav-sub">
-                        <ul>
-                          <li><a href="Shop-Coffee.html">Shop</a></li>
-                          <li><a href="Classes.html">Classes</a></li>
-                          <li><a href="AboutUs.html">About Us</a></li>
-                          <li><a href="Contact.html">Contact</a></li>
-                          <li><a href="Cart.html">Cart</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </nav>
+            <div class="navBarLinks">
+                <a href="Shop-Coffee.html" style="padding-left: 2em;">Shop</a>
+                <a href="Classes.html" style="padding-left: 2em;">Classes</a>
+                <a href="AboutUs.html" style="padding-left: 2em;">About Us</a>
+                <a href="Contact.html" style="padding-left: 2em;">Contact</a>
+                <a href="Cart.html" style="padding-left: 2em;">Cart</a>
             </div>
 
-            <script>
-            function myFunction(x) {
-              x.classList.toggle("change");
-            }
-            </script>
+            <!--
+<div class="ham-nav-menu">
+<nav class ="main-navigation" role="navigation">
+<ul>
+<li>
+<a href="#" class="hamburger-item">
+<div class="menucontainer" onclick="myFunction(this)">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
+</a>
+<div class="nav-content">
+<div class="nav-sub">
+<ul>
+<li><a href="Shop-Coffee.html">Shop</a></li>
+<li><a href="Classes.html">Classes</a></li>
+<li><a href="AboutUs.html">About Us</a></li>
+<li><a href="Contact.html">Contact</a></li>
+<li><a href="Cart.html">Cart</a></li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+-->
+
+            <div id="menuToggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="Shop-Coffee.html">
+                        <li>
+                            Shop
+                        </li>
+                    </a>
+                    <a href="Classes.html">
+                        <li>
+                            Classes
+                        </li>
+                    </a>
+                    <a href="AboutUs.html">
+                        <li>
+                            About us
+                        </li>
+                    </a>
+                    <a href="Contact.html">
+                        <li>
+                            Contact
+                        </li>
+                    </a>
+                    <a href="Cart.html">
+                        <li>
+                            Cart
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
         </div>
 
-        <section id="featured-products">
-            <div class="shopcoffee-herobanner">
-                <div class="coffeeitem-col">
-                  <div class="h7">
+        <script>
+            function myFunction(x) {
+                x.classList.toggle("change");
+            }
+        </script>
+
+    <section id="featured-products">
+        <div class="shopcoffee-herobanner">
+            <div class="coffeeitem-col">
+                <div class="h7">
                     Shop Coffee
-                  </div>
                 </div>
             </div>
-            <div class="shopcoffeerow coffeeitem-col">
-                <div class="shopcoffeerow coffeefilter">
-                    <div class="col-60">
-                    </div>
-                    <div class="filtercol">
-                        <ul>
-                            <li><h6>FILTER BY <img src="Images/drop-down-arrow.png"></h6>
-                                <ul>
-                                    <label class="radiocontainer">Option 1
-                                        <input type="radio" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="radiocontainer">Option 2
-                                        <input type="radio" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="radiocontainer">Option 3
-                                        <input type="radio" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+        </div>
+        <div class="shopcoffeerow coffeeitem-col">
+            <div class="shopcoffeerow coffeefilter">
+                <div class="col-60">
                 </div>
-                <div class="shopcoffeerow">
-                    <div class="wrapper">
-                      <a href="ProductDetails1.html">
+                <div class="filtercol">
+                    <ul>
+                        <li><h6>FILTER BY <img src="Images/drop-down-arrow.png"></h6>
+                            <ul>
+                                <label class="radiocontainer">Option 1
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radiocontainer">Option 2
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radiocontainer">Option 3
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="shopcoffeerow">
+                <div class="wrapper">
+                    <a href="ProductDetails1.html">
                         <div class="container">
                             <div class="top">
                                 <img src="Images/coffeeproduct_1.jpg" alt="coffee bag"/>
                             </div>
                             <div class="bottom">
                                 <div class="left">
-                                  <a href="ProductDetails1.html" style="text-decoration:none;">
-                                    <div class="details">
-                                        <p style="margin: 0px">
-                                            Coffee
-                                        </p>
-                                        <p style="margin: 0px">
-                                            CAD $20
-                                        </p>
-                                    </div>
-                                  </a>
+                                    <a href="ProductDetails1.html" style="text-decoration:none;">
+                                        <div class="details">
+                                            <p style="margin: 0px">
+                                                Coffee
+                                            </p>
+                                            <p style="margin: 0px">
+                                                CAD $20
+                                            </p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                      </a>
-                    </div>
-                    <div class="wrapper">
-                      <a href="ProductDetails2.html">
+                    </a>
+                </div>
+                <div class="wrapper">
+                    <a href="ProductDetails2.html">
                         <div class="container">
                             <div class="top">
                                 <img src="Images/coffeeproduct_2.jpg" alt="coffee bag"/>
                             </div>
                             <div class="bottom">
                                 <div class="left">
-                                  <a href="ProductDetails2.html" style="text-decoration:none;">
-                                    <div class="details">
-                                        <p style="margin: 0px">
-                                            Coffee
-                                        </p>
-                                        <p style="margin: 0px">
-                                            CAD $20
-                                        </p>
-                                    </div>
-                                  </a>
+                                    <a href="ProductDetails2.html" style="text-decoration:none;">
+                                        <div class="details">
+                                            <p style="margin: 0px">
+                                                Coffee
+                                            </p>
+                                            <p style="margin: 0px">
+                                                CAD $20
+                                            </p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                      </a>
-                    </div>
-                    <div class="wrapper">
-                      <a href="ProductDetails1.html">
+                    </a>
+                </div>
+                <div class="wrapper">
+                    <a href="ProductDetails1.html">
                         <div class="container">
                             <div class="top">
                                 <img src="Images/coffeeproduct_3.jpg" alt="coffee bag"/>
                             </div>
                             <div class="bottom">
                                 <div class="left">
-                                  <a href="ProductDetails1.html" style="text-decoration:none;">
-                                    <div class="details">
-                                        <p style="margin: 0px">
-                                            Coffee
-                                        </p>
-                                        <p style="margin: 0px">
-                                            CAD $20
-                                        </p>
-                                    </div>
-                                  </a>
+                                    <a href="ProductDetails1.html" style="text-decoration:none;">
+                                        <div class="details">
+                                            <p style="margin: 0px">
+                                                Coffee
+                                            </p>
+                                            <p style="margin: 0px">
+                                                CAD $20
+                                            </p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                      </a>
-                    </div>
-                    <div class="wrapper">
-                      <a href="ProductDetails2.html">
+                    </a>
+                </div>
+                <div class="wrapper">
+                    <a href="ProductDetails2.html">
                         <div class="container">
                             <div class="top">
                                 <img src="Images/coffeeproduct_4.jpg" alt="coffee bag"/>
                             </div>
                             <div class="bottom">
                                 <div class="left">
-                                  <a href="ProductDetails1.htm2" style="text-decoration:none;">
-                                    <div class="details">
-                                        <p style="margin: 0px">
-                                            Coffee
-                                        </p>
-                                        <p style="margin: 0px">
-                                            CAD $20
-                                        </p>
-                                    </div>
-                                  </a>
+                                    <a href="ProductDetails1.htm2" style="text-decoration:none;">
+                                        <div class="details">
+                                            <p style="margin: 0px">
+                                                Coffee
+                                            </p>
+                                            <p style="margin: 0px">
+                                                CAD $20
+                                            </p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                      </a>
+                    </a>
+                </div>
+            </div>
+            <div class="shopcoffeerow">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="top">
+                            <img src="Images/coffeemachine_1.png" alt="coffee bag"/>
+                        </div>
+                        <div class="bottom">
+                            <div class="left">
+                                <div class="details">
+                                    <h3 style="margin: 0px">
+                                        Single Brewer Machine
+                                    </h3>
+                                    <p style="margin: 0px">
+                                        CAD $250
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="shopcoffeerow">
-                    <div class="wrapper">
-                        <div class="container">
-                            <div class="top">
-                                <img src="Images/coffeemachine_1.png" alt="coffee bag"/>
-                            </div>
-                            <div class="bottom">
-                                <div class="left">
-                                    <div class="details">
-                                        <h3 style="margin: 0px">
-                                            Single Brewer Machine
-                                        </h3>
-                                        <p style="margin: 0px">
-                                            CAD $250
-                                        </p>
-                                    </div>
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="top">
+                            <img src="Images/coffeemachine_2.png" alt="coffee bag"/>
+                        </div>
+                        <div class="bottom">
+                            <div class="left">
+                                <div class="details">
+                                    <h3 style="margin: 0px">
+                                        Double Brewer Machine
+                                    </h3>
+                                    <p style="margin: 0px">
+                                        CAD $350
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="wrapper">
-                        <div class="container">
-                            <div class="top">
-                                <img src="Images/coffeemachine_2.png" alt="coffee bag"/>
-                            </div>
-                            <div class="bottom">
-                                <div class="left">
-                                    <div class="details">
-                                        <h3 style="margin: 0px">
-                                            Double Brewer Machine
-                                        </h3>
-                                        <p style="margin: 0px">
-                                            CAD $350
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="top">
+                            <img src="Images/TravelMug.jpg" alt="coffee bag"/>
                         </div>
-                    </div>
-                    <div class="wrapper">
-                        <div class="container">
-                            <div class="top">
-                                <img src="Images/TravelMug.jpg" alt="coffee bag"/>
-                            </div>
-                            <div class="bottom">
-                                <div class="left">
-                                    <div class="details">
-                                        <h3 style="margin: 0px">
-                                            Glass Travel Mug
-                                        </h3>
-                                        <p style="margin: 0px">
-                                            CAD $20
-                                        </p>
-                                    </div>
+                        <div class="bottom">
+                            <div class="left">
+                                <div class="details">
+                                    <h3 style="margin: 0px">
+                                        Glass Travel Mug
+                                    </h3>
+                                    <p style="margin: 0px">
+                                        CAD $20
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer>
-            <div class="footer-col-30">
-                <p class="footer-section-title">
-                    Location
-                </p>
-                <p class="footer-address">
-                    689 Thurlow St. Vancouver, BC Canada V6E 4M3
-                </p>
-                <p>
-                    Our new downtown Vancouver location is now open! In addition to delicious coffee and Lucky's Doughnuts, we are thrilled to reveal a new brunch menu.
-                </p>
-            </div>
-            <div class="footer-col-30">
-                <p class="footer-section-title">
-                    Contact
-                </p>
-                <p>
-                    Have a question, comment or concern?
-                </p>
-                <p>
-                    <strong>Email:</strong> collective@cafe.com
-                <p>
-                    <strong>Phone:</strong> 604 123 1234
-                </p>
-            </div>
-            <div class="footer-col-30">
-                <p class="footer-section-title">
-                    social media
-                </p>
-                <p>
-                    Follow us on social media for more amazing content daily! We even have chances to win some amazing prizes such as free classe
-                </p>
-                <img src="Images/facebook.svg" class="svg">
-                <img src="Images/instagram.svg" class="svg">
-                <img src="Images/twitter.svg" class="svg">
-            </div>
-        </footer>
+    <footer>
+        <div class="footer-col-30">
+            <p class="footer-section-title">
+                Location
+            </p>
+            <p class="footer-address">
+                689 Thurlow St. Vancouver, BC Canada V6E 4M3
+            </p>
+            <p>
+                Our new downtown Vancouver location is now open! In addition to delicious coffee and Lucky's Doughnuts, we are thrilled to reveal a new brunch menu.
+            </p>
+        </div>
+        <div class="footer-col-30">
+            <p class="footer-section-title">
+                Contact
+            </p>
+            <p>
+                Have a question, comment or concern?
+            </p>
+            <p>
+                <strong>Email:</strong> collective@cafe.com
+            <p>
+                <strong>Phone:</strong> 604 123 1234
+            </p>
+        </div>
+        <div class="footer-col-30">
+            <p class="footer-section-title">
+                social media
+            </p>
+            <p>
+                Follow us on social media for more amazing content daily! We even have chances to win some amazing prizes such as free classe
+            </p>
+            <img src="Images/facebook.svg" class="svg">
+            <img src="Images/instagram.svg" class="svg">
+            <img src="Images/twitter.svg" class="svg">
+        </div>
+    </footer>
 
 
     </body>
