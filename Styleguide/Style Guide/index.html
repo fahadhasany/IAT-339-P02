@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!--Header-->
+    <head>
+        <title>Collective Café</title>
+        <meta charset="utf-8">
+
+        <!--CSS Stylesheet-->
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="css/grids.css">
+
+        <!--Reference: https://www.w3schools.com/css/css_icons.asp-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--Reference: https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">
+
+
+    </head>
+
+    <!--Main Content-->
+    <body>
+        <div class="header">
+            <h1>
+                Collective Café
+            </h1>
+            <p>
+                The stylesheet for the coffee and photography café, Collective Café.
+            </p>
+        </div>
+
+        <!--Sidebar navigation, takes 25% of the width-->
+        <div class="row">
+            <div class="sidebar">
+                <div class="sticky-nav">
+                    <a href="#links">Links</a>
+                    <a href="#buttons">Buttons</a>
+                    <a href="#inputs">Inputs</a>
+                    <a href="#images">Images</a>
+                    <a href="#type">Typography</a>
+                    <a href="#lists">Lists</a>
+                    <a href="#nav">Nav Bar</a>
+                    <a href="#product-card">Product Card</a>
+                    <a href="#payment-form">Payment Form</a>
+                    <a href="#checkout-cart">Checkout Cart</a>
+                    <a href="#fonts">Fonts</a>
+                    <a href="#colours">Colours</a>
+                    <a href="#art-direction">Art Direction</a>
+                    <a href="product.html">Product Page</a>
+                    <a href="checkout.html">Checkout Page</a>
+                </div>
+            </div>
+
+            <!--Main content area, takes 75% of the width-->
+            <div class="main">
+
+                <!--In text link styling-->
+                <section id="links">
+                    <h3>
+                        Links
+                    </h3>
+                    <p>
+                        For in-text links, there are a number of ways to utilize them. We can use in-text links within a paragraph tag, or by itself as a tertiary button.
+                    </p>
+                    <div class="component-row">
+                        <div class="col-60">
+                            <a href="#" class="link">
+                                Tertiary Link
+                            </a>
+                            <p>
+                                For an example of a text <a href="#" class="link">link</a> within a paragraph, here is an example.
+                            </p>
+                        </div>
+                        <div class="col-40">
+                            <code>
+                                &lt;a href="#" class="link"&gt;
+                                <br>
+                                Link
+                                <br>
+                                &lt;/a&gt;
+                            </code>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Line to divide the different elements-->
+                <div class="break"></div>
+
+                <!--Two types of buttons: primary-filled buttons and secondary-ghost buttons-->
+                <section id="buttons">
+                    <h3>
+                        Buttons
+                    </h3>
+                    <p>
+                        We utilize two types of buttons, a primary button that is solid and filled, and a secondary ghost button with no fill but unique hover states.
+                    </p>
+                    <div class="component-row">
+                        <div class="col-60">
+                            <button class="btn btn-primary">
+                                Primary Button
+                            </button>
+                        </div>
+                        <div class="col-40">
+                            <code>
+                                &lt;button class="btn btn-primary"&gt;
+                                <br>
+                                Primary Button
+                                <br>
+                                &lt;/button&gt;
+                            </code>
+                        </div>
+                    </div>
+                    <div class="component-row">
+                        <div class="col-60">
+                            <button class="btn btn-secondary">
+                                Secondary Button
+                            </button>
+                        </div>
+                        <div class="col-40">
+                            <code>
+                                &lt;button class="btn btn-secondary"&gt;
+                                <br>
+                                Secondary Button
+                                <br>
+                                &lt;/button&gt;
+                            </code>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="break"></div>
+
+                <!--Two types of inputs: text field inputs and radio button inputs-->
+                <section id="inputs">
+                    <h3>
+                        Inputs
+                    </h3>
+                    <p>
+                        There are two primary methods of inputs, form fields that have a label and a typable box that takes alpha-numeric keys or a radio button that acts as on/off.
+                    </p>
+
+                    <!--Input field styling-->
+                    <div class="component-row">
+                        <div class="col-60">
+                            <label class="text-input-label">Label</label>
+                            <input type="text" id="input-field" placeholder="Enter text here" style="max-width: 400px">
+                        </div>
+                        <div class="col-40">
+                            <code>
+                                &lt;label class="text-input-label"&gt; Input Label &lt;/label&gt;
+                                <br>
+                                &lt;input type="text" placeholder="Hint text"&gt;
+                            </code>
+                        </div>
+                    </div>
+
+                    <!--Radio button styling-->
+                    <div class="component-row">
+                        <div class="col-60">
+                            <ul class="radio-list">
+                              <label class="radiocontainer">Radio 1
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="radiocontainer">Radio 2
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                              </label>
+                            </ul>
+                        </div>
+                        <div class="col-40">
+                            <code>
+                                &lt;ul class="radio-list"&gt;
+                                <br>
+                                &lt;li&gt;
+                                <br>
+                                &lt;input type="radio"&gt;
+                                <br>
+                                &lt;label&gt; Radio Label &lt;/label&gt;
+                                <br>
+                                &lt;/li&gt;
+                                <br>
+                                &lt;/ul&gt;
+                            </code>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="break"></div>
+
+                <!--Image styling-->
+                <section id="images">
+                    <h3>
+                        Images
+                    </h3>
+                    <p>
+                        Koffee follows a strick art direction for photos and other visual elements. Below you can find an example of an image as well as how to present it in an interface.
+                    </p>
+                    <div class="component-row">
+                        <div class="col-60">
+                            <a href="https://google.ca">
+                                <img class="img" src="Images/coffee.jpg" alt="top down shot of coffee">
+                            </a>
+                        </div>
+                        <div class="col-40">
+                            <code>
+                                &lt;a href="link"&gt;
+                                <br>
+                                &lt;img class="img" src="Images/img.jpg" alt="description"&gt;
+                                <br>
+                                &lt;/a&gt;
+                            </code>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="break"></div>
+
+                <!--Typography styling including headings and paragraphs-->
+                <section id="type">
+                    <h3>
+                        Type
+                    </h3>
+                    <p>
+                        We utilize the Type face <b>Montserrat</b> throughout our branding, interfaces, and other materials. We strive to assure our font is readable for all customers and as such, it should be dark and large enough.
+                    </p>
+
+                    <!--Heading styling from H1 to H3 and alternatives-->
+                    <div class="component-row">
+                        <div class="col-60">
+                            <h1>
+                                Page Heading
+                            </h1>
+                            <h2>
+                                Sub-heading Heading
+                            </h2>
+                            <h3>
+                                Paragraph Heading
+                            </h3>
+                            <h3 class="alt-h3">
+                                Alternate Heading
+                            </h3>
+                            <p>
+                                Body
+                            </p>
+                            <p class="alt-p">
+                                Hint Body
+                            </p>
+                        </div>
+                        <div class="col-40">
+                            <code>
+                                &lt;h1&gt; Page Heading &lt;/h1&gt;
+                                <br>
+                                &lt;h2&gt; Sub-Heading &lt;/h2&gt;
+                                <br>
+                                &lt;h3&gt; Paragraph Heading &lt;/h3&gt;
+                                <br>
+                                &lt;h3 class="alt-h3"&gt; Alternate Heading &lt;/h3&gt;
+                                <br>
+                                &lt;p&gt; Body &lt;/p&gt;
+                                <br>
+                                &lt;p class="alt-p"&gt; Hint Body &lt;/p&gt;
+                            </code>
+                        </div>
+                    </div>
+
+                    <!--Paragraph headings and stylings-->
+                    <div class="component-row">
+                        <div class="col-60">
+                            <h3>
+                                Paragraph Heading
+                            </h3>
+                            <p>
+                                Writing a paragraph means knowing what to write about. For us, paragraphs are dark enough to easily read and have good line height to make reading easy.
+                            </p>
+                            <h3 class="alt-h3">
+                                Alternate Paragraph Heading
+                            </h3>
+                            <p class="alt-p">
+                                With some hint text.
+                            </p>
+                        </div>
+                        <div class="col-40">
+                            <code>
+                                &lt;h3&gt; Paragraph Heading &lt;/h3&gt;
+                                <br>
+                                &lt;p&gt; Body text &lt;/p&gt;
+                                <br>
+                                &lt;h3 class="alt-h3&gt; Alternate Paragraph Heading &lt;/h3&gt;
+                                <br>
+                                &lt;p class="alt-p"&gt; Body text &lt;/p&gt;
+                            </code>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="break"></div>
+
+                <!--List styling-->
+                <section id="lists">
+                    <h3>
+                        Lists
+                    </h3>
+                    <p>
+                        Being a shopping experience first offering our clients both retail goods and services, we'll ofter use lists in our interfaces.
+                    </p>
+                    <div class="component-row">
+                        <div class="col-60">
+                            <h3 class="alt-h3">
+                                List Title
+                            </h3>
+                            <ul>
+                                <li>
+                                    This is item 1!
+                                </li>
+                                <li>
+                                    This could be item 2!
+                                </li>
+                                <li>
+                                    This is for sure item 3!
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-40">
+                            <code>
+                                &lt;ul&gt;
+                                <br>
+                                &lt;h3 class="alt-h3"&gt;
+                                <br>
+                                List Title
+                                <br>
+                                &lt;/h3&gt;
+                                <br>
+                                &lt;li&gt;
+                                Item 1
+                                &lt;/li&gt;
+                                <br>
+                                &lt;li&gt;
+                                Item 2
+                                &lt;/li&gt;
+                                <br>
+                                &lt;li&gt;
+                                Item 3
+                                &lt;/li&gt;
+                                <br>
+                                &lt;/ul&gt;
+                            </code>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="break"></div>
+
+                <!--Styling for the nav bar that will be a fixed element across the top of pages-->
+                <section id="nav">
+                    <h3>
+                        Nav Bar
+                    </h3>
+                    <p>
+                        The nav bar is a main element of our interface, it connects mulitple pages and is visible and accessible at all times from any page. It should be flexible and change as the viewport changes.
+                    </p>
+                    <div class="row">
+                        <nav>
+                            <h1>
+                                <a href="#" id="logo">Collective Café</a>
+                            </h1>
+                            <ul class="nav-links">
+                                <li>
+                                  <h6>
+                                    <a href="#">Shop</a>
+                                  </h6>
+                                </li>
+                                <li>
+                                  <h6>
+                                    <a href="#">Classes</a>
+                                  </h6>
+                                </li>
+                                <li>
+                                  <h6>
+                                    <a href="#">Who Are We</a>
+                                  </h6>
+                                </li>
+                                <li>
+                                  <h6>
+                                    <a href="#">Contact</a>
+                                  </h6>
+                                </li>
+                                <li>
+                                  <h6>
+                                    <a href="#">Cart</a>
+                                  </h6>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="row">
+                        <code>
+                            &lt;nav&gt;
+                            <br>
+                            &lt;h1&gt;
+                            <br>
+                            &lt;a href="#" id="logo"&gt; Cuppa Café &lt;/a&gt;
+                            <br>
+                            &lt;/h1&gt;
+                            <br>
+                            &lt;ul class="nav-links"&gt;
+                            <br>
+                            &lt;li&gt;
+                            <br>
+                            &lt;a href="#" class="float-right"&gt;
+                            <br>
+                            Link
+                            <br>
+                            &lt;/a&gt;
+                            <br>
+                            &lt;/li&gt;
+                            <br>
+                            &lt;/ul&gt;
+                            <br>
+                            &lt;/nav&gt;
+                        </code>
+                    </div>
+                </section>
+
+                <div class="break"></div>
+
+                <!--Product card styling with an image, name, and price-->
+                <section id="product-card">
+                    <h3>
+                        Product Card
+                    </h3>
+                    <p>
+                        When displaying products in the Shop page, the below element can be used. This card can contain any item, coffee or equipment and should only show the name, price, and a short description.
+                    </p>
+                    <div class="component-row">
+                        <div class="col-50">
+                            <div class="wrapper">
+                                <div class="container">
+                                    <div class="top">
+                                        <img src="Images/coffeebag5.png" alt="coffee bag"/>
+                                    </div>
+                                    <div class="bottom">
+                                        <div class="left">
+                                            <div class="details">
+                                                <h3 style="margin: 0px">
+                                                    Coffee
+                                                </h3>
+                                                <p style="margin: 0px">
+                                                    CAD $100
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-50">
+                            <code>
+                                &lt;div class="wrapper"&gt;
+                                <br>
+                                &lt;div class="container"&gt;
+                                <br>
+                                &lt;div class="top"&gt;
+                                <br>
+                                &lt;img src="source"&gt;
+                                <br>
+                                &lt;/div&gt;
+                                <br>
+                                &lt;div class="bottom"&gt;
+                                <br>
+                                &lt;div class="left"&gt;
+                                <br>
+                                &lt;div class="details"&gt;
+                                <br>
+                                &lt;h2 style="margin: 0px"&gt; Coffee &lt;/h2&gt;
+                                <br>
+                                &lt;p style="margin: 0px"&gt; Price &lt;/hp&gt;
+                                <br>
+                                &lt;/div&gt;
+                                <br>
+                                &lt;/div&gt;
+                                <br>
+                                &lt;/div&gt;
+                                <br>
+                                &lt;/div&gt;
+                                <br>
+                                &lt;/div&gt;
+                            </code>
+                        </div>
+                    </div>
+                    <div class="component-row">
+                        <div class="col-50">
+                            <div class="product-print">
+                                <img src="Images/coffee3.jpg" alt="coffe" class="product-print-image">
+                                <a href="#">
+                                    <div class="product-print-button">
+                                        <button class="btn btn-primary">
+                                            Purchase
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-50">
+                            <code>
+                                &lt;div class="product-print"&gt;
+                                <br>
+                                &lt;img src="Images/coffee3.jpg" alt="coffe" class="product-print-image"&gt;
+                                <br>
+                                &lt;a href="#"&gt;
+                                <br>
+                                &lt;div class="product-print-button"&gt;
+                                <br>
+                                &lt;button class="btn btn-primary"&gt;
+                                <br>
+                                Purchase
+                                <br>
+                                &lt;/button&gt;
+                                <br>
+                                &lt;/div&gt;
+                                <br>
+                                &lt;/a&gt;
+                                <br>
+                                &lt;/div&gt;
+                            </code>
+                        </div>
+                        <div class="component-row">
+                            <div class="col-50">
+                                <div class="class-list">
+                                    <ul class="class-list-price">
+                                        <li class="class-list-header">
+                                            Latte Art Class
+                                        </li>
+                                        <li>
+                                            CAD 50.00
+                                        </li>
+                                        <li>
+                                            Mondays at 10:00AM - 11:30AM
+                                        </li>
+                                        <li>
+                                            Come make some latte art and make new friends!
+                                        </li>
+                                        <li class="class-list-disclaimer">
+                                            *All equipment will be provided in class.
+                                        </li>
+                                        <li id="class-list-button">
+                                            <button class="btn btn-class-list">
+                                                Add to Cart
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-50">
+                                <code>
+                                    &lt;div class="class-list"&gt;
+                                    &lt;ul class="class-list-price&gt;
+                                    <br>
+                                    &lt;li class="class-list-header"&gt;
+                                    Latte Art Class
+                                    &lt;/li&gt;
+                                    <br>
+                                    &lt;li&gt;
+                                    CAD 50.00
+                                    &lt;/li&gt;
+                                    <br>
+                                    &lt;li id="class-list-button"&gt;
+                                    <br>
+                                    &lt;button class="btn btn-class-list"&gt;
+                                    Add to Cart
+                                    &lt;/button&gt;
+                                    <br>
+                                    &lt;/li&gt;
+                                    <br>
+                                    &lt;/ul&gt;
+                                    <br>
+                                    &lt;/div&gt;
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="break"></div>
+
+                <!--Payment form including billing information and payment form-->
+                <section id="payment-form">
+                    <h3>
+                        Payment Form
+                    </h3>
+                    <p>
+                        Payment forms involve two different field inputs, one for billing information including addresses and one for payment. Finally, the forms together have a submit button.
+                    </p>
+                    <div class="row">
+                        <div class="form-container" style="width: 100%">
+                            <div class="row">
+                                <div class="form-col-50">
+                                    <h3>
+                                        Payment Information
+                                    </h3>
+                                    <label class="text-input-label">
+                                        Accepted Payment Methods
+                                    </label>
+                                    <div class="icon-container">
+                                        <i class="fa fa-cc-visa"></i>
+                                        <i class="fa fa-cc-amex"></i>
+                                        <i class="fa fa-cc-mastercard"></i>
+                                        <i class="fa fa-cc-discover"></i>
+                                    </div>
+                                    <label class="text-input-label">
+                                        Cardholder Name
+                                    </label>
+                                    <input type="text" placeholder="John Appleseed">
+                                    <label class="text-input-label">
+                                        Card Number
+                                    </label>
+                                    <input type="text" placeholder="1234 1234 1234 1234">
+                                    <label class="text-input-label">
+                                        Expiry Month
+                                    </label>
+                                    <input type="text" placeholder="November">
+                                    <div class="row">
+                                        <div class="form-col-50">
+                                            <label class="text-input-label">
+                                                Expiry Year
+                                            </label>
+                                            <input type="text" placeholder="2020">
+                                        </div>
+                                        <div class="form-col-50">
+                                            <label class="text-input-label">
+                                                CVV
+                                            </label>
+                                            <input type="text" placeholder="123">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-col-50">
+                                    <h3>
+                                        Billing Information
+                                    </h3>
+                                    <label class="text-input-label">
+                                        First Name
+                                    </label>
+                                    <input type="text" placeholder="John Appleseed">
+                                    <label class="text-input-label">
+                                        Email
+                                    </label>
+                                    <input type="text" placeholder="jappleseed@email.com">
+                                    <label class="text-input-label">
+                                        Address
+                                    </label>
+                                    <input type="text" placeholder="13450 104 Ave">
+                                    <label class="text-input-label">
+                                        City
+                                    </label>
+                                    <input type="text" placeholder="Surrey">
+                                    <div class="row">
+                                        <div class="form-col-50">
+                                            <label class="text-input-label">
+                                                Province
+                                            </label>
+                                            <input type="text" placeholder="BC">
+                                        </div>
+                                        <div class="form-col-50">
+                                            <label class="text-input-label">
+                                                Postal Code
+                                            </label>
+                                            <input type="text" placeholder="V3T 1V8">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="component-row" style="margin-top:20px">
+                        <code>
+                            &lt;div class="row"&gt;
+                            <br>
+                            &lt;div class="form-container" style="width="100%"&gt;
+                            <br>
+                            &lt;div class="row"&gt;
+                            <br>
+                            &lt;div class="form-col-50"&gt;
+                            <br>
+                            &lt;h3&gt; Form Name &lt;/h3&gt;
+                            <br>
+                            &lt;label class="text-input-label"&gt; Label Name &lt;/label&gt;
+                            <br>
+                            &lt;input type="text" placeholder="placeholder"&gt;
+                            <br>
+                            &lt;div class="row"&gt;
+                            <br>
+                            &lt;div class="form-col-50"&gt;
+                            <br>
+                            &lt;label class="text-input-label"&gt; Label Name &lt;/label&gt;
+                            <br>
+                            &lt;input type="text" placeholder="placeholder"&gt;
+                            <br>
+                            &lt;/div&gt;
+                            <br>
+                            &lt;div class="form-col-50"&gt;
+                            <br>
+                            &lt;label class="text-input-label"&gt; Label Name &lt;/label&gt;
+                            <br>
+                            &lt;input type="text" placeholder="placeholder"&gt;
+                            <br>
+                            &lt;/div&gt;
+                            <br>
+                            &lt;/div&gt;
+                            <br>
+                            &lt;div class="form-col-50"&gt;
+                            <br>
+                            &lt;h3&gt; Form Name &lt;/h3&gt;
+                            <br>
+                            &lt;label class="text-input-label"&gt; Label Name &lt;/label&gt;
+                            <br>
+                            &lt;input type="text" placeholder="placeholder"&gt;
+                            <br>
+                            &lt;/div&gt;
+                            <br>
+                            &lt;/div&gt;
+                            <br>
+                            &lt;/div&gt;
+                            <br>
+                        </code>
+                    </div>
+                </section>
+
+                <div class="break"></div>
+
+                <!--Checkout cart that includes the total number of items, prices, images, and total price-->
+                <section id="checkout-cart">
+                    <h3>
+                        Checkout Form
+                    </h3>
+                    <p>
+                        Prior to the billing information and payment information screens, the user should be presented with a checkout confirmation screen with their items listed, the amount of items, their costs, and the total.
+                    </p>
+                    <div class="component-row">
+                        <div class="col-50">
+<!--                            <div class="row">-->
+                                <div class="form-container" style="width: 75%">
+                                    <p class="checkout-total"> Cart
+                                        <span class="text-float-right">
+                                            <i class="fa fa-shopping-cart"></i>
+                                            3
+                                        </span>
+                                    </p>
+                                    <p>
+                                        Item 1
+                                        <span class="text-float-right">
+                                            $10.00
+                                        </span>
+                                    </p>
+                                    <img src="Images/coffeebag2.png" class="checkout-image" alt="coffee bag">
+                                    <p>
+                                        Item 2
+                                        <span class="text-float-right">
+                                            $10.00
+                                        </span>
+                                    </p>
+                                    <img src="Images/coffeebag2.png" class="checkout-image" alt="coffee bag">
+                                    <p>
+                                        Item 3
+                                        <span class="text-float-right">
+                                            $10.00
+                                        </span>
+                                    </p>
+                                    <img src="Images/coffeebag2.png" class="checkout-image" alt="coffee bag">
+                                    <hr>
+                                    <p class="checkout-total">
+                                        Total
+                                        <span class="text-float-right">
+                                            $30.00
+                                        </span>
+                                    </p>
+                                    <button class="btn btn-primary" style="width: 100%">
+                                        Checkout
+                                    </button>
+                                </div>
+<!--                            </div>-->
+                        </div>
+                        <div class="col-50">
+                            <code>
+                                &lt;div class="row"&gt;
+                                <br>
+                                &lt;div class="form-container"&gt;
+                                <br>
+                                &lt;p class="checkout-total"&gt;Cart
+                                <br>
+                                &lt;span class="text-float-right"&gt;
+                                <br>
+                                &lt;i class="fa fa-shopping-cart&gt;&lt;/i&gt;
+                                <br>
+                                &lt;/span&gt;
+                                <br>
+                                &lt;/p&gt;
+                                <br>
+                                &lt;p&gt; Item 1
+                                <br>
+                                &lt;span class="text-float-right"&gt;10&lt;/span&gt;
+                                <br>
+                                &lt;/p&gt;
+                                <br>
+                                &lt;img src="Images/image.png" class="checkout-image"&gt;
+                                <br>
+                                &lt;hr&gt;
+                                &lt;p class="checkout-total"&gt;Total
+                                <br>
+                                &lt;span class="text-float-right"&gt; total
+                                <br>
+                                &lt;/span&gt;
+                                <br>
+                                &lt;/p&gt;
+                                <br>
+                                &lt;button class="btn btn-primary" style="width=100%"&gt;&lt;/button&gt;
+                                <br>
+                                &lt;/div&gt;
+                                <br>
+                                &lt;/div&gt;
+                            </code>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="break"></div>
+
+                <!--Font family used and different font weights-->
+                <section id="fonts">
+                    <h3>
+                        Fonts
+                    </h3>
+                    <p>
+                        Cuppa Café uses the font family Montserrat. A sans-serif font with a unqiue twist, it's smoother, rounder and comes in many different font weights. Just like our coffee.
+                    </p>
+                    <div class="component-row">
+                        <div class="col-50">
+                            <h1 style="margin-top: 0">
+                                Open Sans Extra-bold/ 800
+                            </h1>
+                            <h2>
+                                Open Sans Bold / 700
+                            </h2>
+                            <h3>
+                                Open Sans Regular / 400
+                            </h3>
+                            <h4>
+                                Open Sans Light Italic / 300
+                            </h4>
+                            <p>
+                                Open Sans Light / 300
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="break"></div>
+
+                <!--Colour palette with 6 total colours-->
+                <section id="colours">
+                    <h3>
+                        Colours
+                    </h3>
+                    <p>
+                        Cuppa Café uses predominately 5 colours in it's colour scheme. For print and physical products, colour may vary, but for web and digital, we utilize these 6, 3 grays for text, 1 white, and two additional colours that represent the brand.
+                    </p>
+                    <div class="component-row">
+                        <div class="colour-palette-div">
+                            <div class="colour-palette charcoal" style="border-radius: 10px 10px 0 0">
+                                <p>
+                                    Charcoal <span class="text-float-right">#38363B</span>
+                                </p>
+                            </div>
+                            <div class="colour-palette midnight">
+                                <p>
+                                    Midnight <span class="text-float-right">#919EAB</span>
+                                </p>
+                            </div>
+                            <div class="colour-palette london-fog">
+                                <p>
+                                    London Fog <span class="text-float-right">#ABB7C9</span>
+                                </p>
+                            </div>
+                            <div class="colour-palette ocean">
+                                <p>
+                                    Ocean <span class="text-float-right">#D4E5E6</span>
+                                </p>
+                            </div>
+                            <div class="colour-palette mocha" style="border-radius: 0px 0px 10px 10px">
+                                <p>
+                                    Mocha <span class="text-float-right">#AE9267</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="break"></div>
+
+                <!--Visual direction for the photographic work-->
+                <section id="art-direction">
+                    <h3>
+                        Art Direction
+                    </h3>
+                    <p>
+                        Cuppa Café has a very specific art direction in mind when it comes to the photography, visuals, and overall aesthetics created from the different brand pieces. The imagery and other visuals should be grainer, crystal clear, not overly bright, and should have a colour grading that is natural.
+                    </p>
+                    <div class="row">
+                        <div class="column">
+                            <img src="Images/coffee.jpg" alt="top down shot of coffee">
+                            <img src="Images/coffee2.jpg" alt="top down shot of three types of coffee drinks">
+                            <img src="Images/coffee7.jpg" alt="espresso being dripped into a glass shot cup">
+                        </div>
+                        <div class="column">
+                            <img src="Images/coffee3.jpg" alt="top down shot of a latter on a light-blue background">
+                            <img src="Images/coffee4.jpg" alt="coffee being poured by someone into a white mug">
+                            <img src="Images/coffee8.jpg" alt="coffee mug being laid down on a saucer">
+                        </div>
+                        <div class="column">
+                            <img src="Images/coffee5.jpg" alt="front shot of a latte in a light-blue mug">
+                            <img src="Images/coffee6.jpg" alt="far shot of espresso being poured">
+                            <img src="Images/coffee9.jpg" alt="different coffee colours lined up">
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </body>
+</html>

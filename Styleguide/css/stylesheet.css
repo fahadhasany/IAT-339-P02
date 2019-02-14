@@ -29,7 +29,7 @@ body{
 .header{
     text-align: left;
     padding: 4em;
-    background-color: #AE9267;
+    background-color: #C1A599;
     color: #fff;
 }
 
@@ -45,7 +45,7 @@ body{
     text-align: left;
     padding: 4em 0em 4em 10em;
     margin-top: 8em;
-    background-color: #AE9267;
+    background-color: #C1A599;
     color: #fff;
 }
 
@@ -67,7 +67,7 @@ code{
 h1{
     font-weight: 800;
     font-size: 3em;
-    color: #AE9267;
+    color: #C1A599;
 }
 
 h2{
@@ -103,7 +103,7 @@ h6{
     font-weight: 800;
     font-size: 3em;
     color: white;
-    padding-top: 0.8em;
+    padding-top: 4em;
 }
 
 
@@ -151,16 +151,16 @@ p{
 
 /*Primary button for primary actions*/
 .btn-primary{
-    background-color: #AE9267;
+    background-color: #C1A599;
     color: white;
-    border: 1px solid #AE9267;
+    border: 1px solid #C1A599;
     transition-property: all;
     transition-duration: 0.2s;
     /*    box-shadow: 5px 5px 40px #919EAB;*/
 }
 
 .btn-primary:hover{
-    background-color: #9E835F;
+    background-color: #AD938A;
     color: white;
     box-shadow: none;
 }
@@ -168,15 +168,15 @@ p{
 /*Secondary button or ghost button for secondary actions*/
 .btn-secondary{
     background-color: inherit;
-    color: #AE9267;
-    border: 2px solid #AE9267;
+    color: #C1A599;
+    border: 2px solid #C1A599;
     transition-property: all;
     transition-duration: 0.2s;
 }
 
 .btn-secondary:hover{
-    background-color: #9E835F;
-    border: 2px solid #AE9267;
+    background-color: #AD938A;
+    border: 2px solid #AD938A;
     color: white;
 }
 
@@ -862,7 +862,7 @@ transform: scaleX(1);
 *=== Footer ===
 */
 footer{
-    background-color: #AE9267;
+    background-color: #C1A599;
     display: flex;
     flex-wrap: wrap;
     margin-top: 2em;
