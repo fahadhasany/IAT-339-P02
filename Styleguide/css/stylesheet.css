@@ -20,7 +20,7 @@ body{
     font-family: 'Avenir',sans-serif;
     color: #38363B;
     background-image: url("Images/HeroBanner.jpg");
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 /*
@@ -862,15 +862,15 @@ transform: scaleX(1);
 *=== Footer ===
 */
 footer{
-    background-color: #AE9267; 
-    display: flex; 
-    flex-wrap: wrap; 
-    margin-top: 2em;  
+    background-color: #AE9267;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
 }
 
 .footer-col-30{
-    flex: 33.3%; 
-    padding: 2em; 
+    flex: 33.3%;
+    padding: 2em;
 }
 
 .footer-section-title{
@@ -928,7 +928,7 @@ footer img{
 
 @media screen and (min-width: 721px){
     #menuToggle{
-        display: none; 
+        display: none;
     }
 
 }
@@ -936,7 +936,7 @@ footer img{
 @media screen and (max-width: 720px){
     .footer-col-30{
         flex: 100%;
-        padding: 1em 2em 1em 2em; 
+        padding: 1em 2em 1em 2em;
     }
 
     /*Charles Additions February 12th*/
@@ -961,7 +961,7 @@ footer img{
     .change .bar1 {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
         transform: rotate(-45deg) translate(-9px, 6px);
-        background-color: red; 
+        background-color: red;
     }
 
     .change .bar2 {opacity: 0;}
@@ -1032,7 +1032,7 @@ footer img{
     }
 
     .nav-sub{
-        padding:1em; 
+        padding:1em;
     }
 
     .nav-sub ul{
@@ -1057,13 +1057,11 @@ footer img{
     /*https://codepen.io/erikterwan/pen/grOZxx*/
     #menuToggle{
         display: block;
-        position: absolute; 
-        right: 50px;  
-
-        z-index: 1; 
-
-        -webkit-user-select: none; 
-        user-select: none; 
+        position: absolute;
+        right: 50px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
     }
 
     #menuToggle input{
@@ -1136,12 +1134,13 @@ footer img{
     */
     #menu
     {
+        width: 25em;
         position: absolute;
-        width: 100vh;
-        margin: -100px 0 0 0;
-        padding: 50px;
+        margin: -5em 0 0 0;
+        padding: 5em;
         padding-top: 130px;
-        right: -100px;
+        margin-left: -18em;
+
 
 
         background: #ededed;
@@ -1157,9 +1156,12 @@ footer img{
 
     #menu li
     {
-        text-align: center; 
+        text-align: center;
         padding: 1em 0 0 0;
         font-size: 22px;
+        width: 10em;
+        margin: 0 auto;
+
     }
 
     /*
@@ -1172,12 +1174,12 @@ footer img{
     }
 
     #menu a{
-        color: black; 
-        text-decoration: none; 
-        transition: all 1s ease; 
+        color: black;
+        text-decoration: none;
+        transition: all 1s ease;
     }
 
     #menu a:hover{
-        text-decoration: underline; 
+        text-decoration: underline;
     }
 }
