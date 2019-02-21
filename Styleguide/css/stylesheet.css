@@ -159,6 +159,14 @@ p{
     /*    box-shadow: 5px 5px 40px #919EAB;*/
 }
 
+.btn-shop-classes{
+    background-color: #C1A599;
+    color: white;
+    border: 1px solid #C1A599;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
 .btn-primary:hover{
     background-color: #AD938A;
     color: white;
@@ -1148,7 +1156,7 @@ footer img{
     */
     #menu
     {
-        height: 100vh; 
+        height: 100vh;
         position: absolute;
         margin: -5em 0 0 0;
         padding: 5em;
@@ -1196,4 +1204,10 @@ footer img{
     #menu a:hover{
         text-decoration: underline;
     }
+}
+
+@media screen and (max-width: 600px){
+  .btn-shop-classes{
+    width:96%;
+  }
 }

@@ -510,9 +510,9 @@ Reference: https://stackoverflow.com/questions/43707076/position-sticky-not-work
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 20em;
-    border: 1px solid black;
-    border-radius: 10px;
+    height: 100%;
+    border: 1.2px solid black;
+    border-radius: 12px;
 }
 
 .shop-class-col-40{
@@ -523,6 +523,8 @@ Reference: https://stackoverflow.com/questions/43707076/position-sticky-not-work
     flex: 60%;
     padding-top: 1em;
     padding-left: 3em;
+    padding-bottom: 2em;
+    padding-right: 2em;
 }
 
 .shop-class-col-40 img {
@@ -533,9 +535,11 @@ Reference: https://stackoverflow.com/questions/43707076/position-sticky-not-work
     object-fit: fill;
     overflow: hidden;
 */
+    object-fit: cover;
 
     border-radius: 10px 0px 0px 10px;
 }
+
 /*Rajvir's add-ins*/
 
 .quotation-img {
@@ -642,12 +646,13 @@ iframe {
     }
 
     .shop-class-col-40{
-        flex: 100%;
+        flex: 40%;
     }
 
     .shop-class-col-40 img{
-        height: 100%;
-        width: auto;
+        height: auto;
+        width: 100%;
+        border-radius: 9px 10px 0px 0px;
     }
 
     .shop-class-col-60{
