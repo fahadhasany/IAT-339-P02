@@ -895,6 +895,11 @@ footer{
     padding: 2em;
 }
 
+.footer-col-25{
+    flex: 25%;
+    padding: 2em; 
+}
+
 .footer-section-title{
     font-family: 'Avenir-Black', sans-serif;
     font-weight: 600;
@@ -946,6 +951,10 @@ footer img{
     .col-50{
         flex: 0 1 auto;
     }
+    
+    .footer-col-25{
+        flex: 50%;
+    }
 }
 
 @media screen and (min-width: 721px){
@@ -956,7 +965,7 @@ footer img{
 }
 
 @media screen and (max-width: 720px){
-    .footer-col-30{
+    .footer-col-25{
         flex: 100%;
         padding: 1em 2em 1em 2em;
     }
@@ -1165,7 +1174,7 @@ footer img{
 
 
 
-        background: #ededed;
+        background: #D4E5E6;
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
         /* to stop flickering of text in safari */
@@ -1198,11 +1207,11 @@ footer img{
     #menu a{
         color: black;
         text-decoration: none;
-        transition: all 1s ease;
+        transition: all 0.3s ease;
     }
 
     #menu a:hover{
-        text-decoration: underline;
+        color: #AE9267;
     }
 }
 
