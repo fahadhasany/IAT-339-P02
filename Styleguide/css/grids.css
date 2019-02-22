@@ -394,6 +394,10 @@ text-align: right;
     margin-top: 2em;
 }
 
+.input-text-col-50{
+    flex: 50%;  
+}
+
 /*For Product and Checkout page*/
 .main-content {
     padding: 2em 5em;

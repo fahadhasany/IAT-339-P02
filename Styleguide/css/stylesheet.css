@@ -247,8 +247,8 @@ input[type=text]:focus{
 }
 
 .form-col-align{
-  margin-left: -2em;
-  margin-top: -2.4em;
+    margin-left: -2em;
+    margin-top: -2.4em;
 }
 
 .formboxspacing{
@@ -951,7 +951,7 @@ footer img{
     .col-50{
         flex: 0 1 auto;
     }
-    
+
     .footer-col-25{
         flex: 50%;
     }
@@ -1212,11 +1212,13 @@ footer img{
 
     #menu a:hover{
         color: #AE9267;
+        text-decoration: underline; 
     }
+
 }
 
 @media screen and (max-width: 600px){
-  .btn-shop-classes{
-    width:96%;
-  }
+    .btn-shop-classes{
+        width:96%;
+    }
 }
