@@ -390,7 +390,7 @@ text-align: right;
 
 .col-40{
     flex:40%;
-    margin-top: 2em
+    margin-top: 2em;
     border: 1px solid red;
 }
 
