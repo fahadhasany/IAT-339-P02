@@ -596,6 +596,11 @@ iframe {
     border: 0;
 }
 
+.cart-form{
+    margin: 5em; 
+    padding: 2em 5em 2em 5em; 
+}
+
 .row .form-container {
     width: 90%;
     display: block;
