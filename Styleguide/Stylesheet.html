@@ -159,14 +159,14 @@
                     <div class="component-row">
                         <div class="col-60">
                             <ul class="radio-list">
-                              <label class="radiocontainer">Radio 1
-                                <input type="radio" checked="checked" name="radio">
-                                <span class="checkmark"></span>
-                              </label>
-                              <label class="radiocontainer">Radio 2
-                                <input type="radio" name="radio">
-                                <span class="checkmark"></span>
-                              </label>
+                                <label class="radiocontainer">Radio 1
+                                    <input type="radio" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radiocontainer">Radio 2
+                                    <input type="radio" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
                             </ul>
                         </div>
                         <div class="col-40">
@@ -361,62 +361,100 @@
                         The nav bar is a main element of our interface, it connects mulitple pages and is visible and accessible at all times from any page. It should be flexible and change as the viewport changes.
                     </p>
                     <div class="row">
-                        <nav>
-                            <h1>
-                                <a href="#" id="logo">Collective Café</a>
-                            </h1>
-                            <ul class="nav-links">
-                                <li>
-                                  <h6>
-                                    <a href="#">Shop</a>
-                                  </h6>
-                                </li>
-                                <li>
-                                  <h6>
-                                    <a href="#">Classes</a>
-                                  </h6>
-                                </li>
-                                <li>
-                                  <h6>
-                                    <a href="#">Who Are We</a>
-                                  </h6>
-                                </li>
-                                <li>
-                                  <h6>
-                                    <a href="#">Contact</a>
-                                  </h6>
-                                </li>
-                                <li>
-                                  <h6>
-                                    <a href="#">Cart</a>
-                                  </h6>
-                                </li>
-                            </ul>
-                        </nav>
+                        <div class="navBar">
+                            <a href="index.html" id="logo">Collective Café</a>
+                            <div class="navBarLinks">
+                                <a href="index.html" style="padding-left: 2em;">Home</a>
+                                <a href="Shop-Coffee.html" style="padding-left: 2em;">Shop</a>
+                                <a href="Classes.html" style="padding-left: 2em;">Classes</a>
+                                <a href="AboutUs.html" style="padding-left: 2em;">About Us</a>
+                                <a href="Contact.html" style="padding-left: 2em;">Contact</a>
+                                <a href="Checkout.html" style="padding-left: 2em;">Cart</a>
+                            </div>
+
+                            <!--
+<div class="ham-nav-menu">
+<nav class ="main-navigation" role="navigation">
+<ul>
+<li>
+<a href="#" class="hamburger-item">
+<div class="menucontainer" onclick="myFunction(this)">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
+</a>
+<div class="nav-content">
+<div class="nav-sub">
+<ul>
+<li><a href="Shop-Coffee.html">Shop</a></li>
+<li><a href="Classes.html">Classes</a></li>
+<li><a href="AboutUs.html">About Us</a></li>
+<li><a href="Contact.html">Contact</a></li>
+<li><a href="Cart.html">Cart</a></li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+-->
+
+                            <div id="menuToggle">
+                                <input type="checkbox">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <ul id="menu">
+                                    <a href="Shop-Coffee.html">
+                                        <li>
+                                            Shop
+                                        </li>
+                                    </a>
+                                    <a href="Classes.html">
+                                        <li>
+                                            Classes
+                                        </li>
+                                    </a>
+                                    <a href="AboutUs.html">
+                                        <li>
+                                            About us
+                                        </li>
+                                    </a>
+                                    <a href="Contact.html">
+                                        <li>
+                                            Contact
+                                        </li>
+                                    </a>
+                                    <a href="Cart.html">
+                                        <li>
+                                            Cart
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
                         <code>
                             &lt;nav&gt;
                             <br>
-                            &lt;h1&gt;
+                            &lt;a href="index.html&gt; Collective Café &lt;/a&gt;
                             <br>
-                            &lt;a href="#" id="logo"&gt; Cuppa Café &lt;/a&gt;
+                            &lt;div class="navBarLinks&gt;
                             <br>
-                            &lt;/h1&gt;
+                            &lt;a href="index.html" style="padding-left: 2em;"&gt; Home &lt;/a&gt;
                             <br>
-                            &lt;ul class="nav-links"&gt;
+                            &lt;a href="index.html" style="padding-left: 2em;"&gt; Shop &lt;/a&gt;
                             <br>
-                            &lt;li&gt;
+                            &lt;a href="index.html" style="padding-left: 2em;"&gt; Classes &lt;/a&gt;
                             <br>
-                            &lt;a href="#" class="float-right"&gt;
+                            &lt;a href="index.html" style="padding-left: 2em;"&gt; About Us &lt;/a&gt;
                             <br>
-                            Link
+                            &lt;a href="index.html" style="padding-left: 2em;"&gt; Cart &lt;/a&gt;
                             <br>
-                            &lt;/a&gt;
-                            <br>
-                            &lt;/li&gt;
-                            <br>
-                            &lt;/ul&gt;
+                            &lt;/div&gt;
                             <br>
                             &lt;/nav&gt;
                         </code>
@@ -436,23 +474,27 @@
                     <div class="component-row">
                         <div class="col-50">
                             <div class="wrapper">
-                                <div class="container">
-                                    <div class="top">
-                                        <img src="Images/coffeebag5.png" alt="coffee bag"/>
-                                    </div>
-                                    <div class="bottom">
-                                        <div class="left">
-                                            <div class="details">
-                                                <h3 style="margin: 0px">
-                                                    Coffee
-                                                </h3>
-                                                <p style="margin: 0px">
-                                                    CAD $100
-                                                </p>
+                                <a href="ProductDetails2.html">
+                                    <div class="container">
+                                        <div class="top">
+                                            <img src="Images/coffeeproduct_2.jpg" alt="coffee bag"/>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="left">
+                                                <a href="ProductDetails2.html" style="text-decoration:none;">
+                                                    <div class="details">
+                                                        <p style="margin: 0px">
+                                                            Coffee
+                                                        </p>
+                                                        <p style="margin: 0px">
+                                                            CAD $20
+                                                        </p>
+                                                    </div>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div class="col-50">
@@ -492,93 +534,74 @@
                     <div class="component-row">
                         <div class="col-50">
                             <div class="product-print">
-                                <img src="Images/coffee3.jpg" alt="coffe" class="product-print-image">
                                 <a href="#">
-                                    <div class="product-print-button">
-                                        <button class="btn btn-primary">
-                                            Purchase
-                                        </button>
-                                    </div>
+                                    <img src="Images/coffee3.jpg" alt="coffee" class="print-img">
                                 </a>
                             </div>
                         </div>
                         <div class="col-50">
                             <code>
-                                &lt;div class="product-print"&gt;
-                                <br>
-                                &lt;img src="Images/coffee3.jpg" alt="coffe" class="product-print-image"&gt;
+                                &lt;div class="print-columns"&gt;
                                 <br>
                                 &lt;a href="#"&gt;
                                 <br>
-                                &lt;div class="product-print-button"&gt;
-                                <br>
-                                &lt;button class="btn btn-primary"&gt;
-                                <br>
-                                Purchase
-                                <br>
-                                &lt;/button&gt;
-                                <br>
-                                &lt;/div&gt;
+                                &lt;img src="src" alt="alt" class="print-img"&gt;
                                 <br>
                                 &lt;/a&gt;
                                 <br>
                                 &lt;/div&gt;
                             </code>
                         </div>
-                        <div class="component-row">
-                            <div class="col-50">
-                                <div class="class-list">
-                                    <ul class="class-list-price">
-                                        <li class="class-list-header">
-                                            Latte Art Class
-                                        </li>
-                                        <li>
-                                            CAD 50.00
-                                        </li>
-                                        <li>
-                                            Mondays at 10:00AM - 11:30AM
-                                        </li>
-                                        <li>
-                                            Come make some latte art and make new friends!
-                                        </li>
-                                        <li class="class-list-disclaimer">
-                                            *All equipment will be provided in class.
-                                        </li>
-                                        <li id="class-list-button">
-                                            <button class="btn btn-class-list">
-                                                Add to Cart
-                                            </button>
-                                        </li>
-                                    </ul>
-                                </div>
+                    </div>
+                    <div class="row">
+                        <div class="shop-class-container">
+                            <div class="shop-class-col-40">
+                                <img src="Images/CoffeeArt_Intermediate.jpg" alt="intermediate-coffee-art">
                             </div>
-                            <div class="col-50">
-                                <code>
-                                    &lt;div class="class-list"&gt;
-                                    &lt;ul class="class-list-price&gt;
-                                    <br>
-                                    &lt;li class="class-list-header"&gt;
-                                    Latte Art Class
-                                    &lt;/li&gt;
-                                    <br>
-                                    &lt;li&gt;
-                                    CAD 50.00
-                                    &lt;/li&gt;
-                                    <br>
-                                    &lt;li id="class-list-button"&gt;
-                                    <br>
-                                    &lt;button class="btn btn-class-list"&gt;
-                                    Add to Cart
-                                    &lt;/button&gt;
-                                    <br>
-                                    &lt;/li&gt;
-                                    <br>
-                                    &lt;/ul&gt;
-                                    <br>
-                                    &lt;/div&gt;
-                                </code>
+                            <div class="shop-class-col-60">
+                                <h3>
+                                    Latte Art: Intermediate
+                                </h3>
+                                <p>
+                                    CAD $50
+                                </p>
+                                <p>
+                                    Take your latte art to the next level by taking our intermediate class. For one hour, you will learn how to draw animals and text on your lattes by one of our very own coffee artist!
+                                </p>
+                                <p>
+                                    Mondays 8pm - 9pm @ The Collective Café
+                                </p>
+                                <button class="btn btn-shop-classes">
+                                    Register
+                                </button>
                             </div>
                         </div>
+                    </div>
+                    <div class="row">
+                        <code>
+                            &lt;div class="shop-class-col-40"&gt;
+                            <br>
+                            &lt;img src="src"&gt; 
+                            <br>
+                            &lt;/div&gt; 
+                            <br>
+                            &lt;div class="shop-class-col-60"&gt; 
+                            <br>
+                            &lt;h3&gt; Title &lt;/h3&gt; 
+                            <br>
+                            &lt;p&gt; Price &lt;/p&gt;
+                            <br>
+                            &lt;p&gt; Description &lt;/p&gt;
+                            <br>
+                            &lt;p&gt; Time and location &lt;/p&gt;
+                            <br>
+                            &lt;button class="btn btn-shop-classes"&gt; Register&lt;/butto&gt;
+                            <br>
+                            &lt;/div&gt;
+                            <br>
+                            &lt;/div&gt;
+                            <br>
+                        </code>
                     </div>
                 </section>
 
@@ -739,47 +762,47 @@
                     </p>
                     <div class="component-row">
                         <div class="col-50">
-<!--                            <div class="row">-->
-                                <div class="form-container" style="width: 75%">
-                                    <p class="checkout-total"> Cart
-                                        <span class="text-float-right">
-                                            <i class="fa fa-shopping-cart"></i>
-                                            3
-                                        </span>
-                                    </p>
-                                    <p>
-                                        Item 1
-                                        <span class="text-float-right">
-                                            $10.00
-                                        </span>
-                                    </p>
-                                    <img src="Images/coffeebag2.png" class="checkout-image" alt="coffee bag">
-                                    <p>
-                                        Item 2
-                                        <span class="text-float-right">
-                                            $10.00
-                                        </span>
-                                    </p>
-                                    <img src="Images/coffeebag2.png" class="checkout-image" alt="coffee bag">
-                                    <p>
-                                        Item 3
-                                        <span class="text-float-right">
-                                            $10.00
-                                        </span>
-                                    </p>
-                                    <img src="Images/coffeebag2.png" class="checkout-image" alt="coffee bag">
-                                    <hr>
-                                    <p class="checkout-total">
-                                        Total
-                                        <span class="text-float-right">
-                                            $30.00
-                                        </span>
-                                    </p>
-                                    <button class="btn btn-primary" style="width: 100%">
-                                        Checkout
-                                    </button>
-                                </div>
-<!--                            </div>-->
+                            <!--                            <div class="row">-->
+                            <div class="form-container" style="width: 75%">
+                                <p class="checkout-total"> Cart
+                                    <span class="text-float-right">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        3
+                                    </span>
+                                </p>
+                                <p>
+                                    Item 1
+                                    <span class="text-float-right">
+                                        $10.00
+                                    </span>
+                                </p>
+                                <img src="Images/coffeebag2.png" class="checkout-image" alt="coffee bag">
+                                <p>
+                                    Item 2
+                                    <span class="text-float-right">
+                                        $10.00
+                                    </span>
+                                </p>
+                                <img src="Images/coffeebag2.png" class="checkout-image" alt="coffee bag">
+                                <p>
+                                    Item 3
+                                    <span class="text-float-right">
+                                        $10.00
+                                    </span>
+                                </p>
+                                <img src="Images/coffeebag2.png" class="checkout-image" alt="coffee bag">
+                                <hr>
+                                <p class="checkout-total">
+                                    Total
+                                    <span class="text-float-right">
+                                        $30.00
+                                    </span>
+                                </p>
+                                <button class="btn btn-primary" style="width: 100%">
+                                    Checkout
+                                </button>
+                            </div>
+                            <!--                            </div>-->
                         </div>
                         <div class="col-50">
                             <code>

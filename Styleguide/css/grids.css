@@ -393,6 +393,7 @@ text-align: right;
 .col-50 {
     flex: 50%;
     margin-top: 2em;
+    justify-content: center; 
 }
 
 .input-text-col-50{
