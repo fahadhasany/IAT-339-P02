@@ -2,35 +2,35 @@
 <html lang="en">
 
     <head>
-        <title>Collective Café</title>
-        <meta charset="utf-8">
+    <title>Collective Café</title>
+    <meta charset="utf-8">
 
-        <!--CSS Stylesheet-->
-        <link rel="stylesheet" href="css/stylesheet.css">
-        <link rel="stylesheet" href="css/grids.css">
+    <!--CSS Stylesheet-->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/grids.css">
 
-        <!--Reference: https://www.w3schools.com/css/css_icons.asp-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Reference: https://www.w3schools.com/css/css_icons.asp-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!--Reference: https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat-->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">
-    </head>
+    <!--Reference: https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">
+</head>
 
-    <body>
-        <!--Nav Bar-->
-        <div class="navBar">
-            <a href="index.html" id="logo">Collective Café</a>
-            <div class="navBarLinks">
-                <a href="index.html" style="padding-left: 2em;">Home</a>
-                <a href="Shop-Coffee.html" style="padding-left: 2em;">Shop Coffee</a>
-                <a href="Shop-Prints.html" style="padding-left: 2em;">Shop Prints</a>
-                <a href="Classes.html" style="padding-left: 2em;">Classes</a>
-                <a href="AboutUs.html" style="padding-left: 2em;">About Us</a>
-                <a href="Contact.html" style="padding-left: 2em;">Contact</a>
-                <a href="Checkout.html" style="padding-left: 2em;">Cart</a>
-            </div>
+<body>
+    <!--Nav Bar-->
+    <div class="navBar">
+        <a href="index.html" id="logo">Collective Café</a>
+        <div class="navBarLinks">
+            <a href="index.html" style="padding-left: 2em;">Home</a>
+            <a href="Shop-Coffee.html" style="padding-left: 2em;">Shop Coffee</a>
+            <a href="Shop-Prints.html" style="padding-left: 2em;">Shop Prints</a>
+            <a href="Classes.html" style="padding-left: 2em;">Classes</a>
+            <a href="AboutUs.html" style="padding-left: 2em;">About Us</a>
+            <a href="Contact.html" style="padding-left: 2em;">Contact</a>
+            <a href="Checkout.html" style="padding-left: 2em;">Cart</a>
+        </div>
 
-            <!--
+        <!--
 <div class="ham-nav-menu">
 <nav class ="main-navigation" role="navigation">
 <ul>
@@ -59,12 +59,40 @@
 </div>
 -->
 
-            <div id="menuToggle">
-                <input type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul id="menu">
+        <div id="menuToggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="Shop-Coffee.html">Shop Coffee</a>
+                </li>
+
+                <li>
+                    <a href="Shop-Prints.html">Shop Prints</a>
+                </li>
+
+                <li>
+                    <a href="Classes.html">Classes</a>
+                </li>
+
+                <li>
+                    <a href="AboutUs.html">About Us</a>
+                </li>
+
+                <li>
+                    <a href="Contact.html">Contact</a>
+                </li>
+
+                <li>
+                    <a href="Cart.html">Cart</a>
+                </li>
+                <!--
                     <a href="index.html">
                         <li>
                             Home
@@ -100,142 +128,143 @@
                             Cart
                         </li>
                     </a>
-                </ul>
+-->
+            </ul>
+        </div>
+    </div>
+
+    <!--Page Header-->
+
+    <div class="coffeeclass-herobanner">
+        <div class="coffeeitem-col h7">
+            Classes
+        </div>
+    </div>
+
+
+    <div class="break"></div>
+
+    <!--Main Page Content-->
+    <section>
+        <div class="shop-class-row">
+            <div class="shop-class-container">
+                <div class="shop-class-col-40">
+                    <img src="Images/CoffeeArt_beginner.jpg" alt="beginner-coffee-art">
+                </div>
+                <div class="shop-class-col-60">
+                    <h3>
+                        Latte Art: Beginner
+                    </h3>
+                    <p>
+                        CAD $40
+                    </p>
+                    <p>
+                        Want to learn some basic latte? This is the perfect class for you to learn a tips and tricks on how to create latte art.
+                    </p>
+                    <p>
+                        Mondays 6pm - 7pm @ The Collective Café
+                    </p>
+                    <button class="btn btn-shop-classes">
+                        Register
+                    </button>
+                </div>
             </div>
         </div>
 
-        <!--Page Header-->
-
-        <div class="coffeeclass-herobanner">
-            <div class="coffeeitem-col h7">
-                Classes
+        <div class="shop-class-row">
+            <div class="shop-class-container">
+                <div class="shop-class-col-40">
+                    <img src="Images/CoffeeArt_Intermediate.jpg" alt="intermediate-coffee-art">
+                </div>
+                <div class="shop-class-col-60">
+                    <h3>
+                        Latte Art: Intermediate
+                    </h3>
+                    <p>
+                        CAD $50
+                    </p>
+                    <p>
+                        Take your latte art to the next level by taking our intermediate class. For one hour, you will learn how to draw animals and text on your lattes by one of our very own coffee artist!
+                    </p>
+                    <p>
+                        Mondays 8pm - 9pm @ The Collective Café
+                    </p>
+                    <button class="btn btn-shop-classes">
+                        Register
+                    </button>
+                </div>
             </div>
         </div>
 
-
-        <div class="break"></div>
-
-        <!--Main Page Content-->
-        <section>
-            <div class="shop-class-row">
-                <div class="shop-class-container">
-                    <div class="shop-class-col-40">
-                        <img src="Images/CoffeeArt_beginner.jpg" alt="beginner-coffee-art">
-                    </div>
-                    <div class="shop-class-col-60">
-                        <h3>
-                            Latte Art: Beginner
-                        </h3>
-                        <p>
-                            CAD $40
-                        </p>
-                        <p>
-                            Want to learn some basic latte? This is the perfect class for you to learn a tips and tricks on how to create latte art.
-                        </p>
-                        <p>
-                            Mondays 6pm - 7pm @ The Collective Café
-                        </p>
-                        <button class="btn btn-shop-classes">
-                            Register
-                        </button>
-                    </div>
+        <div class="shop-class-row">
+            <div class="shop-class-container">
+                <div class="shop-class-col-40">
+                    <img src="Images/CoffeeClass.jpg" alt="beginner-coffee-art">
+                </div>
+                <div class="shop-class-col-60">
+                    <h3>
+                        Brewing Coffee
+                    </h3>
+                    <p>
+                        CAD $80
+                    </p>
+                    <p>
+                        Learn how to brew the best cup of coffee! We will take you through how to make cold coffee, mochas, latte, espresso, and any other form with your recommendation.
+                    </p>
+                    <p>
+                        Tuesdays 6pm - 7pm @ The Collective Café
+                    </p>
+                    <button class="btn btn-shop-classes">
+                        Register
+                    </button>
                 </div>
             </div>
-
-            <div class="shop-class-row">
-                <div class="shop-class-container">
-                    <div class="shop-class-col-40">
-                        <img src="Images/CoffeeArt_Intermediate.jpg" alt="intermediate-coffee-art">
-                    </div>
-                    <div class="shop-class-col-60">
-                        <h3>
-                            Latte Art: Intermediate
-                        </h3>
-                        <p>
-                            CAD $50
-                        </p>
-                        <p>
-                            Take your latte art to the next level by taking our intermediate class. For one hour, you will learn how to draw animals and text on your lattes by one of our very own coffee artist!
-                        </p>
-                        <p>
-                            Mondays 8pm - 9pm @ The Collective Café
-                        </p>
-                        <button class="btn btn-shop-classes">
-                            Register
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="shop-class-row">
-                <div class="shop-class-container">
-                    <div class="shop-class-col-40">
-                        <img src="Images/CoffeeClass.jpg" alt="beginner-coffee-art">
-                    </div>
-                    <div class="shop-class-col-60">
-                        <h3>
-                            Brewing Coffee
-                        </h3>
-                        <p>
-                            CAD $80
-                        </p>
-                        <p>
-                            Learn how to brew the best cup of coffee! We will take you through how to make cold coffee, mochas, latte, espresso, and any other form with your recommendation.
-                        </p>
-                        <p>
-                            Tuesdays 6pm - 7pm @ The Collective Café
-                        </p>
-                        <button class="btn btn-shop-classes">
-                            Register
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div class="footer-col-25">
-                <p class="footer-section-title">
-                    Location
-                </p>
-                <p class="footer-address">
-                    689 Thurlow St. Vancouver, BC Canada V6E 4M3
-                </p>
-                <p>
-                    Our new downtown Vancouver location is now open! In addition to delicious coffee and Lucky's Doughnuts, we are thrilled to reveal a new brunch menu.
-                </p>
-            </div>
-            <div class="footer-col-25">
-                <p class="footer-section-title">
-                    Contact
-                </p>
-                <p>
-                    Have a question, comment or concern?
-                </p>
-                <p>
-                    <strong>Email:</strong> collective@cafe.com
+        </div>
+    </section>
+    <footer>
+        <div class="footer-col-25">
+            <p class="footer-section-title">
+                Location
+            </p>
+            <p class="footer-address">
+                689 Thurlow St. Vancouver, BC Canada V6E 4M3
+            </p>
+            <p>
+                Our new downtown Vancouver location is now open! In addition to delicious coffee and Lucky's Doughnuts, we are thrilled to reveal a new brunch menu.
+            </p>
+        </div>
+        <div class="footer-col-25">
+            <p class="footer-section-title">
+                Contact
+            </p>
+            <p>
+                Have a question, comment or concern?
+            </p>
+            <p>
+                <strong>Email:</strong> collective@cafe.com
                 <p>
                     <strong>Phone:</strong> 604 123 1234
                 </p>
-            </div>
-            <div class="footer-col-25">
-                <p class="footer-section-title">
-                    Social Media
-                </p>
-                <p>
-                    Follow us on social media for more amazing content daily! We even have chances to win some amazing prizes such as free classes.
-                </p>
-                <img src="Images/facebook.svg" class="svg">
-                <img src="Images/instagram.svg" class="svg">
-                <img src="Images/twitter.svg" class="svg">
-            </div>
-            <div class="footer-col-25">
-                <p class="footer-section-title">
-                    Style Guide
-                </p>
-                <p>
-                    You can checkout our styleguide <a href="Stylesheet.html" class="link">here.</a>
-                </p>
-            </div>
-        </footer>
-    </body>
+        </div>
+        <div class="footer-col-25">
+            <p class="footer-section-title">
+                Social Media
+            </p>
+            <p>
+                Follow us on social media for more amazing content daily! We even have chances to win some amazing prizes such as free classes.
+            </p>
+            <img src="Images/facebook.svg" alt="FacebookIcon" class="svg">
+            <img src="Images/instagram.svg" alt="InstagramIcon" class="svg">
+            <img src="Images/twitter.svg" alt="TwitterIcon" class="svg">
+        </div>
+        <div class="footer-col-25">
+            <p class="footer-section-title">
+                Style Guide
+            </p>
+            <p>
+                You can checkout our styleguide <a href="Stylesheet.html" class="link">here.</a>
+            </p>
+        </div>
+    </footer>
+</body>
 </html>

@@ -85,7 +85,7 @@ text-align: right;
     display: flex;
     width: 100%;
     height: 100vh;
-    background-image: url("HeroBanner.jpg");
+    background-image: url("HeroBanner3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -149,6 +149,10 @@ text-align: right;
     flex: 50%;
     margin-left: 15em;
     margin-top: 10em;
+}
+
+.flex-col p{
+    color: white;
 }
 
 .featured-prod-col-75{
@@ -593,7 +597,7 @@ iframe {
     padding: 2em;
     width: 100%;
     height: 20em;
-    border: 0;
+    border: 0px;
 }
 
 .cart-form{

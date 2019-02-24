@@ -19,7 +19,7 @@ body{
     margin: 0px;
     font-family: 'Avenir',sans-serif;
     color: #38363B;
-    background-image: url("Images/HeroBanner.jpg");
+/*    background-image: url("Images/HeroBanner.jpg");*/
     overflow-x: hidden;
 }
 
