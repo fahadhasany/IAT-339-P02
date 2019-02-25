@@ -449,9 +449,9 @@ ul li{
 }
 
 .itemselection ul li ul{
-    display: none;
+    display: block;
     position: absolute;
-    margin-top: -2em;
+    margin-top: -2.8em;
     padding-right: 2em;
     z-index: 10;
 }
