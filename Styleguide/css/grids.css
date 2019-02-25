@@ -89,8 +89,18 @@ text-align: right;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
+}
+
+.homepage-collapse-herobanner{
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 15em;
+    background-image: url("ShopCoffee_Header.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .shopcoffee-herobanner{
@@ -144,6 +154,21 @@ text-align: right;
     position: relative;
 }
 
+.home-page-banner-text-col{
+  display: table;
+  margin: 0 auto;
+}
+
+.home-page-banner-text-flex{
+  flex: 50%;
+  display: table;
+  margin: 0 auto;
+  margin-top: 10em;
+}
+
+.home-page-banner-text-flex p{
+    color: white;
+}
 
 .flex-col {
     flex: 50%;
@@ -179,8 +204,8 @@ text-align: right;
 }
 
 .homepageproduct{
-    display: flex; 
-    flex-wrap: wrap; 
+    display: flex;
+    flex-wrap: wrap;
     margin: 2em;
     height: auto;
 }
@@ -397,11 +422,11 @@ text-align: right;
 .col-50 {
     flex: 50%;
     margin-top: 2em;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .input-text-col-50{
-    flex: 50%;  
+    flex: 50%;
 }
 
 /*For Product and Checkout page*/
@@ -601,8 +626,8 @@ iframe {
 }
 
 .cart-form{
-    margin: 5em; 
-    padding: 2em 5em 2em 5em; 
+    margin: 5em;
+    padding: 2em 5em 2em 5em;
 }
 
 .row .form-container {
@@ -635,6 +660,14 @@ iframe {
 
     .wrapper{
         margin: 1em;
+    }
+
+    .heroBanner{
+      display: none;
+    }
+
+    .homepage-collapse-herobanner{
+      display: flex;
     }
 }
 
