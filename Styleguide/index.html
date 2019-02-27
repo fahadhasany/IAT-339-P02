@@ -4,6 +4,7 @@
     <head>
         <title>Collective Café</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--CSS Stylesheet-->
         <link rel="stylesheet" href="css/stylesheet.css">
@@ -21,9 +22,10 @@
     <body>
         <!--Nav Bar-->
         <div class="navBar">
-            <a href="HomePage.html" id="logo">Collective Café</a>
+            <a href="index.html" id="logo">Collective Café</a>
             <div class="navBarLinks">
-                <a href="Shop-Coffee.html" style="padding-left: 2em;">Shop</a>
+                <a href="Shop-Coffee.html" style="padding-left: 2em;">Shop Coffee</a>
+                <a href="Shop-Prints.html" style="padding-left: 2em;">Shop Prints</a>
                 <a href="Classes.html" style="padding-left: 2em;">Classes</a>
                 <a href="AboutUs.html" style="padding-left: 2em;">About Us</a>
                 <a href="Contact.html" style="padding-left: 2em;">Contact</a>
@@ -65,52 +67,93 @@
                 <span></span>
                 <span></span>
                 <ul id="menu">
-                    <a href="Shop-Coffee.html">
-                        <li>
-                            Shop
-                        </li>
-                    </a>
-                    <a href="Classes.html">
-                        <li>
-                            Classes
-                        </li>
-                    </a>
-                    <a href="AboutUs.html">
-                        <li>
-                            About us
-                        </li>
-                    </a>
-                    <a href="Contact.html">
-                        <li>
-                            Contact
-                        </li>
-                    </a>
-                    <a href="Cart.html">
-                        <li>
-                            Cart
-                        </li>
-                    </a>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="Shop-Coffee.html">Shop Coffee</a>
+                    </li>
+
+                    <li>
+                        <a href="Shop-Prints.html">Shop Prints</a>
+                    </li>
+
+                    <li>
+                        <a href="Classes.html">Classes</a>
+                    </li>
+
+                    <li>
+                        <a href="AboutUs.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="Contact.html">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="Cart.html">Cart</a>
+                    </li>
+
+                    <!--
+<a href="index.html">
+<li>
+Home
+</li>
+</a>
+<a href="Shop-Coffee.html">
+<li>
+Shop Coffee
+</li>
+</a>
+<a href="Shop-Prints.html">
+<li>
+Shop Prints
+</li>
+</a>
+<a href="Classes.html">
+<li>
+Classes
+</li>
+</a>
+<a href="AboutUs.html">
+<li>
+About us
+</li>
+</a>
+<a href="Contact.html">
+<li>
+Contact
+</li>
+</a>
+<a href="Cart.html">
+<li>
+Cart
+</li>
+</a>
+-->
                 </ul>
             </div>
-
         </div>
 
         <div class="heroBanner">
-            <div class="row">
-                <div class="flex-col">
+            <div class="home-page-banner-text-flex">
+                <div class="home-page-banner-text-col">
                     <h2>Collective Café</h2>
                     <p>Locally sourced coffee </p>
                     <p>Local art work</p>
                     <p>Coffee classes </p>
-                    <p>It’s a vibe  </p>
-                    
-
-                    <a href="Shop-Coffee.html" class="link">Shop</a>
-
+                    <p>It’s a vibe </p>
                 </div>
+            </div>
 
-                <div class="flex-col">
-                </div>
+            <div class="flex-col">
+            </div>
+        </div>
+
+        <div class="homepage-collapse-herobanner">
+            <div class="coffeeitem-col" style="margin-top:10em">
+                <h2>Collective Café</h2>
             </div>
         </div>
 
@@ -118,52 +161,101 @@
             <div class="row productrow">
                 <h2>Featured Products</h2>
             </div>
-            <div class="row">
-                <div class="col-75" style="background-color: lightblue;">
-                    <div class="row">
-                        <div class="homepageproduct">
-                            <img src="Images/coffee7.jpg" alt="product-img" width="300">
+            <div class="shopcoffeerow coffeeitem-col">
+                <div class="shopcoffeerow">
+                    <div class="wrapper">
+                        <a href="ProductDetails1.html">
+                            <div class="container">
+                                <div class="top">
+                                    <img src="Images/coffeeproduct_1.jpg" alt="coffee bag" />
+                                </div>
+                                <div class="bottom">
+                                    <div class="left">
+                                        <a href="ProductDetails1.html" style="text-decoration:none;">
+                                            <div class="details">
+                                                <p style="margin: 0px">
+                                                    Coffee
+                                                </p>
+                                                <p style="margin: 0px">
+                                                    CAD $20
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrapper">
+                        <a href="ProductDetails2.html"></a>
+                        <div class="container">
+                            <div class="top">
+                                <img src="Images/coffeeproduct_2.jpg" alt="coffee bag" />
+                            </div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <a href="ProductDetails2.html" style="text-decoration:none;">
+                                        <div class="details">
+                                            <p style="margin: 0px">
+                                                Coffee
+                                            </p>
+                                            <p style="margin: 0px">
+                                                CAD $20
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="homepageproduct">
-                            <img src="Images/coffee5.jpg" alt="product-img" width="300">
-                        </div>
-                        <div class="homepageproduct">
-                            <img src="Images/coffee6.jpg" alt="product-img" width="300">
+                    </div>
+                    <div class="wrapper">
+                        <a href="ProductDetails1.html"></a>
+                        <div class="container">
+                            <div class="top">
+                                <img src="Images/coffeeproduct_3.jpg" alt="coffee bag" />
+                            </div>
+                            <div class="bottom">
+                                <div class="left">
+                                    <a href="ProductDetails1.html" style="text-decoration:none;">
+                                        <div class="details">
+                                            <p style="margin: 0px">
+                                                Coffee
+                                            </p>
+                                            <p style="margin: 0px">
+                                                CAD $20
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-25" style="background-color: black;">
-                    <h2>Image Here</h2>
-                </div>
             </div>
         </section>
-
-
 
         <section id="Featured-Prints">
             <div class="row productrow">
                 <h2>Featured Prints</h2>
             </div>
-             <div class="row">
-                <div class="col-75" style="background-color: lightblue;">
-                    <div class="row">
-                        <div class="homepageproduct">
-                            <img src="Images/coffee7.jpg" alt="product-img" width="300">
-                        </div>
-                        <div class="homepageproduct">
-                            <img src="Images/coffee5.jpg" alt="product-img" width="300">
-                        </div>
-                        <div class="homepageproduct">
-                            <img src="Images/coffee6.jpg" alt="product-img" width="300">
-                        </div>
-                    </div>
-
+            <div class="shopcoffeerow">
+                <div class="print-columns">
+                    <img src="Images/coffee3.jpg" alt="Coffee-Image1" class="print-img" style="width: 100%">
+                </div>
+                <div class="print-columns">
+                    <img src="Images/coffee4.jpg" alt="Coffee-Image2" class="print-img" style="width: 100%">
+                </div>
+                <div class="print-columns">
+                    <img src="Images/coffee7.jpg" alt="Coffee-Image3" class="print-img" style="width: 100%">
+                </div>
+                <div class="print-columns">
+                    <img src="Images/coffee5.jpg" alt="Coffee-Image4" class="print-img" style="width: 100%">
                 </div>
             </div>
-            
+
         </section>
         <footer>
-            <div class="footer-col-30">
+            <div class="footer-col-25">
                 <p class="footer-section-title">
                     Location
                 </p>
@@ -174,7 +266,7 @@
                     Our new downtown Vancouver location is now open! In addition to delicious coffee and Lucky's Doughnuts, we are thrilled to reveal a new brunch menu.
                 </p>
             </div>
-            <div class="footer-col-30">
+            <div class="footer-col-25">
                 <p class="footer-section-title">
                     Contact
                 </p>
@@ -187,17 +279,26 @@
                     <strong>Phone:</strong> 604 123 1234
                 </p>
             </div>
-            <div class="footer-col-30">
+            <div class="footer-col-25">
                 <p class="footer-section-title">
-                    social media
+                    Social Media
                 </p>
                 <p>
                     Follow us on social media for more amazing content daily! We even have chances to win some amazing prizes such as free classes.
                 </p>
-                <img src="Images/facebook.svg" class="svg">
-                <img src="Images/instagram.svg" class="svg">
-                <img src="Images/twitter.svg" class="svg">
+                <img src="Images/facebook.svg" alt="FacebookIcon" class="svg">
+                <img src="Images/instagram.svg" alt="InstagramIcon" class="svg">
+                <img src="Images/twitter.svg" alt="TwitterIcon" class="svg">
+            </div>
+            <div class="footer-col-25">
+                <p class="footer-section-title">
+                    Style Guide
+                </p>
+                <p>
+                    You can checkout our styleguide <a href="Stylesheet.html" class="link">here.</a>
+                </p>
             </div>
         </footer>
     </body>
+
 </html>

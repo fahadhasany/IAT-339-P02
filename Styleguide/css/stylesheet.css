@@ -19,7 +19,7 @@ body{
     margin: 0px;
     font-family: 'Avenir',sans-serif;
     color: #38363B;
-    background-image: url("Images/HeroBanner.jpg");
+/*    background-image: url("Images/HeroBanner.jpg");*/
     overflow-x: hidden;
 }
 
@@ -159,6 +159,14 @@ p{
     /*    box-shadow: 5px 5px 40px #919EAB;*/
 }
 
+.btn-shop-classes{
+    background-color: #C1A599;
+    color: white;
+    border: 1px solid #C1A599;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
 .btn-primary:hover{
     background-color: #AD938A;
     color: white;
@@ -239,8 +247,8 @@ input[type=text]:focus{
 }
 
 .form-col-align{
-  margin-left: -2em;
-  margin-top: -2.4em;
+    margin-left: -2em;
+    margin-top: -2.4em;
 }
 
 .formboxspacing{
@@ -353,13 +361,17 @@ i:hover{
 /*Images*/
 
 .print-img{
+    transform: scale(0.95);
     transition: all 0.2s ease;
 }
 
 .print-img:hover{
-    -webkit-box-shadow: 10px 10px 28px -13px rgba(110,110,110,1);
-    -moz-box-shadow: 10px 10px 28px -13px rgba(110,110,110,1);
-    box-shadow: 10px 10px 28px -13px rgba(110,110,110,1);
+    -webkit-box-shadow: 5px 5px 40px #919EAB;
+    -moz-box-shadow: 5px 5px 40px #919EAB;
+    box-shadow: 5px 5px 40px #919EAB;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
 }
 
 .img{
@@ -427,7 +439,6 @@ ul li{
 
 .itemselection li{
     list-style: none;
-    border: 1px solid red;
 }
 
 .itemselection ul li{
@@ -437,9 +448,9 @@ ul li{
 }
 
 .itemselection ul li ul{
-    display: none;
+    display: block;
     position: absolute;
-    margin-top: -2em;
+    margin-top: -2.8em;
     padding-right: 2em;
     z-index: 10;
 }
@@ -526,7 +537,7 @@ border-bottom: 2px solid #B0D0D1;
 }
 
 .navBarLinks{
-    flex: 25%;
+    flex: 70%;
     text-align: right;
 
 }
@@ -596,7 +607,7 @@ transform: scaleX(1);
     color: #919EAB;
     text-decoration: none;
     transition: all 0.2s ease;
-    flex:1;
+    /* flex:30%; */
 }
 
 #logo:hover{
@@ -887,6 +898,11 @@ footer{
     padding: 2em;
 }
 
+.footer-col-25{
+    flex: 25%;
+    padding: 2em;
+}
+
 .footer-section-title{
     font-family: 'Avenir-Black', sans-serif;
     font-weight: 600;
@@ -938,6 +954,10 @@ footer img{
     .col-50{
         flex: 0 1 auto;
     }
+
+    .footer-col-25{
+        flex: 50%;
+    }
 }
 
 @media screen and (min-width: 721px){
@@ -947,8 +967,8 @@ footer img{
 
 }
 
-@media screen and (max-width: 720px){
-    .footer-col-30{
+@media screen and (max-width: 900px){
+    .footer-col-25{
         flex: 100%;
         padding: 1em 2em 1em 2em;
     }
@@ -994,9 +1014,9 @@ footer img{
         background-color: #FFF; */
     }
 
-    #logo{
+    /* #logo{
         flex:1;
-    }
+    } */
 
     .main-navigation{
         z-index: 10;
@@ -1148,7 +1168,8 @@ footer img{
     */
     #menu
     {
-        height: 100vh; 
+        display: none;
+        height: 100vh;
         position: absolute;
         margin: -5em 0 0 0;
         padding: 5em;
@@ -1156,8 +1177,7 @@ footer img{
         margin-left: -18em;
 
 
-
-        background: #ededed;
+        background: #D4E5E6;
         list-style-type: none;
         -webkit-font-smoothing: antialiased;
         /* to stop flickering of text in safari */
@@ -1183,17 +1203,34 @@ footer img{
     */
     #menuToggle input:checked ~ ul
     {
+/*        visibility: visible; */
+        display: block;
         transform: scale(1.0, 1.0);
         opacity: 1;
     }
 
+/*
+    #menuToggle input:empty ~ ul
+    {
+        visibility: hidden;
+    }
+*/
+
     #menu a{
         color: black;
         text-decoration: none;
-        transition: all 1s ease;
+        transition: all 0.3s ease;
     }
 
     #menu a:hover{
+        color: #AE9267;
         text-decoration: underline;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .btn-shop-classes{
+        width:96%;
     }
 }

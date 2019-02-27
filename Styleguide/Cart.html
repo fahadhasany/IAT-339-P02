@@ -4,6 +4,7 @@
     <head>
         <title>Collective Café</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--CSS Stylesheet-->
         <link rel="stylesheet" href="css/stylesheet.css">
@@ -20,13 +21,14 @@
         <!--Nav Bar-->
         <!--Nav Bar-->
         <div class="navBar">
-            <a href="HomePage.html" id="logo">Collective Café</a>
+            <a href="index.html" id="logo">Collective Café</a>
             <div class="navBarLinks">
-                <a href="Shop-Coffee.html" style="padding-left: 2em;">Shop</a>
+                <a href="Shop-Coffee.html" style="padding-left: 2em;">Shop Coffee</a>
+                <a href="Shop-Prints.html" style="padding-left: 2em;">Shop Prints</a>
                 <a href="Classes.html" style="padding-left: 2em;">Classes</a>
                 <a href="AboutUs.html" style="padding-left: 2em;">About Us</a>
                 <a href="Contact.html" style="padding-left: 2em;">Contact</a>
-                <a href="Checkout.html" style="padding-left: 2em;">Cart</a>
+                <a href="Cart.html" style="padding-left: 2em;">Cart</a>
             </div>
 
             <!--
@@ -64,9 +66,19 @@
                 <span></span>
                 <span></span>
                 <ul id="menu">
+                    <a href="index.html">
+                        <li>
+                            Home
+                        </li>
+                    </a>
                     <a href="Shop-Coffee.html">
                         <li>
-                            Shop
+                            Shop Coffee
+                        </li>
+                    </a>
+                    <a href="Shop-Prints.html">
+                        <li>
+                            Shop Prints
                         </li>
                     </a>
                     <a href="Classes.html">
@@ -91,11 +103,52 @@
                     </a>
                 </ul>
             </div>
-
         </div>
-
+        <div class="form-container cart-form">
+            <p class="checkout-total"> Cart
+                <span class="text-float-right">
+                    <i class="fa fa-shopping-cart"></i>
+                    3
+                </span>
+            </p>
+            <p>
+                Coffee - Light Roast
+                <span class="text-float-right">
+                    CAD 5.50
+                </span>
+            </p>
+            <img src="Images/coffeeproduct_1.jpg" class="checkout-image" alt="coffee bag">
+            <p>
+                Coffee Grinder
+                <span class="text-float-right">
+                    CAD 50.00
+                </span>
+            </p>
+            <img src="Images/coffeegrinder.png" class="checkout-image" alt="coffee bag">
+            <p>
+                Travel Mug in Silver
+                <span class="text-float-right">
+                    CAD 15.00
+                </span>
+            </p>
+            <img src="Images/travelmug.png" class="checkout-image" alt="coffee bag">
+            <hr>
+            <p class="checkout-total">
+                Total
+                <span class="text-float-right">
+                    CAD 70.50
+                </span>
+            </p>
+            <div class="contact-row" style="justify-content: center">
+                <a href="checkout.html">
+                    <button class="btn btn-primary">
+                        Checkout
+                    </button>
+                </a>
+            </div>
+        </div>
         <footer>
-            <div class="footer-col-30">
+            <div class="footer-col-25">
                 <p class="footer-section-title">
                     Location
                 </p>
@@ -106,7 +159,7 @@
                     Our new downtown Vancouver location is now open! In addition to delicious coffee and Lucky's Doughnuts, we are thrilled to reveal a new brunch menu.
                 </p>
             </div>
-            <div class="footer-col-30">
+            <div class="footer-col-25">
                 <p class="footer-section-title">
                     Contact
                 </p>
@@ -119,9 +172,9 @@
                     <strong>Phone:</strong> 604 123 1234
                 </p>
             </div>
-            <div class="footer-col-30">
+            <div class="footer-col-25">
                 <p class="footer-section-title">
-                    social media
+                    Social Media
                 </p>
                 <p>
                     Follow us on social media for more amazing content daily! We even have chances to win some amazing prizes such as free classes.
@@ -129,6 +182,14 @@
                 <img src="Images/facebook.svg" class="svg">
                 <img src="Images/instagram.svg" class="svg">
                 <img src="Images/twitter.svg" class="svg">
+            </div>
+            <div class="footer-col-25">
+                <p class="footer-section-title">
+                    Style Guide
+                </p>
+                <p>
+                    You can checkout our styleguide <a href="Stylesheet.html" class="link">here.</a>
+                </p>
             </div>
         </footer>
     </body>

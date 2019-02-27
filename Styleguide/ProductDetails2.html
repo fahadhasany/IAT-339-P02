@@ -4,6 +4,7 @@
     <head>
         <title>Collective Café</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <script src="Javascript/javascript.js"></script>
         <!--CSS Stylesheet-->
@@ -20,17 +21,120 @@
     <body>
         <!--Nav Bar-->
         <div class="navBar">
-            <a href="HomePage.html" id="logo">Collective Café</a>
+            <a href="index.html" id="logo">Collective Café</a>
             <div class="navBarLinks">
-                <a href="Shop-Coffee.html" style="padding-left: 2em;">Shop</a>
+                <a href="Shop-Coffee.html" style="padding-left: 2em;">Shop Coffee</a>
+                <a href="Shop-Prints.html" style="padding-left: 2em;">Shop Prints</a>
                 <a href="Classes.html" style="padding-left: 2em;">Classes</a>
                 <a href="AboutUs.html" style="padding-left: 2em;">About Us</a>
                 <a href="Contact.html" style="padding-left: 2em;">Contact</a>
-                <a href="Checkout.html" style="padding-left: 2em;">Cart</a>
+                <a href="Cart.html" style="padding-left: 2em;">Cart</a>
+            </div>
+
+            <!--
+<div class="ham-nav-menu">
+<nav class ="main-navigation" role="navigation">
+<ul>
+<li>
+<a href="#" class="hamburger-item">
+<div class="menucontainer" onclick="myFunction(this)">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
+</a>
+<div class="nav-content">
+<div class="nav-sub">
+<ul>
+<li><a href="Shop-Coffee.html">Shop</a></li>
+<li><a href="Classes.html">Classes</a></li>
+<li><a href="AboutUs.html">About Us</a></li>
+<li><a href="Contact.html">Contact</a></li>
+<li><a href="Cart.html">Cart</a></li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+-->
+
+            <div id="menuToggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="Shop-Coffee.html">Shop Coffee</a>
+                    </li>
+
+                    <li>
+                        <a href="Shop-Prints.html">Shop Prints</a>
+                    </li>
+
+                    <li>
+                        <a href="Classes.html">Classes</a>
+                    </li>
+
+                    <li>
+                        <a href="AboutUs.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="Contact.html">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="Cart.html">Cart</a>
+                    </li>
+                    <!--
+<a href="index.html">
+<li>
+Home
+</li>
+</a>
+<a href="Shop-Coffee.html">
+<li>
+Shop Coffee
+</li>
+</a>
+<a href="Shop-Prints.html">
+<li>
+Shop Prints
+</li>
+</a>
+<a href="Classes.html">
+<li>
+Classes
+</li>
+</a>
+<a href="AboutUs.html">
+<li>
+About us
+</li>
+</a>
+<a href="Contact.html">
+<li>
+Contact
+</li>
+</a>
+<a href="Cart.html">
+<li>
+Cart
+</li>
+</a>
+-->
+                </ul>
             </div>
         </div>
 
-        <section id="Product Details">
+        <section id="ProductDetails">
 
 
             <div class="productdetailsrow coffeeitem-col">
@@ -39,21 +143,13 @@
                     </div>
                     <div class="producttextcol">
                         <h2>Strong, dark roast with personality</h2>
-                        <hr/>
-                        <p>Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Fusce leo erat, elementum
-                            vel pulvinar vel, rutrum sit amet dolor.
-                            Pellentesque habitant morbi tristique
-                            senectus et netus et malesuada fames ac
-                            turpis egestas. In sed metus et ex
-                            malesuada vestibulum ac nec dui.</p>
-                        <p>Vestibulum non maximus eros, eget viverra
-                            lectus. Aliquam pretium elit ex, molestie
-                            efficitur nisi lobortis nec. In hac
-                            habitasse platea dictumst.<p/>
+                        <hr />
+                        <p>Get ready for an explosion of flavour. A cup of our Dark Roast Coffee, is exactly what you need to kickstart your morning and conquer your day. With our rich and bold dark roast blend, you will taste a decadent chocolaty flavour.</p>
+                        <p>All our coffee grounds are sourced locally, made organically, and are fare trade.</p>
+
                     </div>
                     <div class="product-col-60">
-                        <img src="Images/coffeeproduct_2(detailpage).png" style="max-width: 90%; max-height: 90%; display:block; margin: 0 auto;">
+                        <img src="Images/coffeeproduct_2(detailpage).png" style="max-width: 90%; max-height: 90%; display:block; margin: 0 auto;" alt="CoffeeBeanProduct">
                     </div>
                     <div class="productinputcol generictoppad">
                         <h3>Home Blend</h3>
@@ -66,45 +162,53 @@
                         <div class="coffeeincrease">
                             <h5>QUANTITY</h5>
                             <form>
-                                <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                <div class="value-button" id="decrease" onclick="decreaseValue()">-</div>
                                 <input type="number" id="number" value="0" />
-                                <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                                <div class="value-button" id="increase" onclick="increaseValue()">+</div>
                             </form>
                         </div>
                         <div class="itemselection">
                             <ul>
-                                <li><h5>SIZE <img src="Images/drop-down-arrow.png"></h5>
+                                <li>
+                                    <h5>SIZE <img src="Images/drop-down-arrow.png" alt="DropdownArrow"></h5>
                                     <ul>
-                                        <select>
-                                            <option>12 oz</option>
-                                            <option>20 oz</option>
-                                            <option>32 oz</option>
-                                        </select>
+                                        <li>
+                                            <select>
+                                                <option>12 oz</option>
+                                                <option>20 oz</option>
+                                                <option>32 oz</option>
+                                            </select>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
                         </div>
                         <div class="itemselection" style="margin-top: -3em;">
                             <ul>
-                                <li><h5>GRIND TYPE <img src="Images/drop-down-arrow.png"></h5>
+                                <li>
+                                    <h5>GRIND TYPE <img src="Images/drop-down-arrow.png" alt="DropdownArrow"></h5>
                                     <ul>
-                                        <select>
-                                            <option>Whole Bean</option>
-                                            <option>Espresso</option>
-                                            <option>French Press</option>
-                                            <option>Cold Brew</option>
-                                        </select>
+                                        <li>
+                                            <select>
+                                                <option>Whole Bean</option>
+                                                <option>Espresso</option>
+                                                <option>French Press</option>
+                                                <option>Cold Brew</option>
+                                            </select>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
                         </div>
-                        <button class="btn btn-add-to-cart">
-                            Add to Cart
-                        </button>
+                        <a href="Cart.html">
+                            <button class="btn btn-add-to-cart">
+                                Add to Cart
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div class="productdetailsrow">
-                    <hr/>
+                    <hr />
                 </div>
             </div>
 
@@ -113,75 +217,75 @@
                     <h2>Related Products</h2>
                 </div>
                 <div class="productdetailsrow">
-                  <div class="wrapper">
-                    <a href="ProductDetails1.html">
-                      <div class="container">
-                          <div class="top">
-                              <img src="Images/coffeeproduct_1.jpg" alt="coffee bag"/>
-                          </div>
-                          <div class="bottom">
-                              <div class="left">
-                                <a href="ProductDetails1.html" style="text-decoration:none;">
-                                  <div class="details">
-                                      <p style="margin: 0px">
-                                          Coffee
-                                      </p>
-                                      <p style="margin: 0px">
-                                          CAD $20
-                                      </p>
-                                  </div>
-                                </a>
-                              </div>
-                          </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="wrapper">
-                    <a href="ProductDetails1.html">
-                      <div class="container">
-                          <div class="top">
-                              <img src="Images/coffeeproduct_3.jpg" alt="coffee bag"/>
-                          </div>
-                          <div class="bottom">
-                              <div class="left">
-                                <a href="ProductDetails1.html" style="text-decoration:none;">
-                                  <div class="details">
-                                      <p style="margin: 0px">
-                                          Coffee
-                                      </p>
-                                      <p style="margin: 0px">
-                                          CAD $20
-                                      </p>
-                                  </div>
-                                </a>
-                              </div>
-                          </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="wrapper">
-                    <a href="ProductDetails1.html">
-                      <div class="container">
-                          <div class="top">
-                              <img src="Images/coffeeproduct_4.jpg" alt="coffee bag"/>
-                          </div>
-                          <div class="bottom">
-                              <div class="left">
-                                <a href="ProductDetails1.html" style="text-decoration:none;">
-                                  <div class="details">
-                                      <p style="margin: 0px">
-                                          Coffee
-                                      </p>
-                                      <p style="margin: 0px">
-                                          CAD $20
-                                      </p>
-                                  </div>
-                                </a>
-                              </div>
-                          </div>
-                      </div>
-                    </a>
-                  </div>
+                    <div class="wrapper">
+                        <a href="ProductDetails1.html">
+                            <div class="container">
+                                <div class="top">
+                                    <img src="Images/coffeeproduct_1.jpg" alt="coffee bag" />
+                                </div>
+                                <div class="bottom">
+                                    <div class="left">
+                                        <a href="ProductDetails1.html" style="text-decoration:none;">
+                                            <div class="details">
+                                                <p style="margin: 0px">
+                                                    Coffee
+                                                </p>
+                                                <p style="margin: 0px">
+                                                    CAD $20
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrapper">
+                        <a href="ProductDetails1.html">
+                            <div class="container">
+                                <div class="top">
+                                    <img src="Images/coffeeproduct_3.jpg" alt="coffee bag" />
+                                </div>
+                                <div class="bottom">
+                                    <div class="left">
+                                        <a href="ProductDetails1.html" style="text-decoration:none;">
+                                            <div class="details">
+                                                <p style="margin: 0px">
+                                                    Coffee
+                                                </p>
+                                                <p style="margin: 0px">
+                                                    CAD $20
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="wrapper">
+                        <a href="ProductDetails1.html">
+                            <div class="container">
+                                <div class="top">
+                                    <img src="Images/coffeeproduct_4.jpg" alt="coffee bag" />
+                                </div>
+                                <div class="bottom">
+                                    <div class="left">
+                                        <a href="ProductDetails1.html" style="text-decoration:none;">
+                                            <div class="details">
+                                                <p style="margin: 0px">
+                                                    Coffee
+                                                </p>
+                                                <p style="margin: 0px">
+                                                    CAD $20
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -217,9 +321,9 @@
                     <p class="footer-section-title">
                         social media
                     </p>
-                    <img src="Images/facebook.svg" class="svg">
-                    <img src="Images/instagram.svg" class="svg">
-                    <img src="Images/twitter.svg" class="svg">
+                    <img src="Images/facebook.svg" alt="FacebookIcon" class="svg">
+                    <img src="Images/instagram.svg" alt="InstagramIcon" class="svg">
+                    <img src="Images/twitter.svg" alt="TwitterIcon" class="svg">
                 </div>
             </div>
         </footer>

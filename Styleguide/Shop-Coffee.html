@@ -4,6 +4,7 @@
     <head>
         <title>Collective Café</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--CSS Stylesheet-->
         <link rel="stylesheet" href="css/stylesheet.css">
@@ -19,43 +20,44 @@
     <body>
         <!--Nav Bar-->
         <div class="navBar">
-            <a href="HomePage.html" id="logo">Collective Café</a>
+            <a href="index.html" id="logo">Collective Café</a>
             <div class="navBarLinks">
-                <a href="Shop-Coffee.html" style="padding-left: 2em;">Shop</a>
+                <a href="Shop-Coffee.html" style="padding-left: 2em;">Shop Coffee</a>
+                <a href="Shop-Prints.html" style="padding-left: 2em;">Shop Prints</a>
                 <a href="Classes.html" style="padding-left: 2em;">Classes</a>
                 <a href="AboutUs.html" style="padding-left: 2em;">About Us</a>
                 <a href="Contact.html" style="padding-left: 2em;">Contact</a>
-                <a href="Checkout.html" style="padding-left: 2em;">Cart</a>
+                <a href="Cart.html" style="padding-left: 2em;">Cart</a>
             </div>
 
             <!--
-                <div class="ham-nav-menu">
-                <nav class ="main-navigation" role="navigation">
-                <ul>
-                <li>
-                <a href="#" class="hamburger-item">
-                <div class="menucontainer" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-                </div>
-                </a>
-                <div class="nav-content">
-                <div class="nav-sub">
-                <ul>
-                <li><a href="Shop-Coffee.html">Shop</a></li>
-                <li><a href="Classes.html">Classes</a></li>
-                <li><a href="AboutUs.html">About Us</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-                <li><a href="Cart.html">Cart</a></li>
-                </ul>
-                </div>
-                </div>
-                </li>
-                </ul>
-                </nav>
-                </div>
-             -->
+<div class="ham-nav-menu">
+<nav class ="main-navigation" role="navigation">
+<ul>
+<li>
+<a href="#" class="hamburger-item">
+<div class="menucontainer" onclick="myFunction(this)">
+<div class="bar1"></div>
+<div class="bar2"></div>
+<div class="bar3"></div>
+</div>
+</a>
+<div class="nav-content">
+<div class="nav-sub">
+<ul>
+<li><a href="Shop-Coffee.html">Shop</a></li>
+<li><a href="Classes.html">Classes</a></li>
+<li><a href="AboutUs.html">About Us</a></li>
+<li><a href="Contact.html">Contact</a></li>
+<li><a href="Cart.html">Cart</a></li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+-->
 
             <div id="menuToggle">
                 <input type="checkbox">
@@ -63,31 +65,70 @@
                 <span></span>
                 <span></span>
                 <ul id="menu">
-                    <a href="Shop-Coffee.html">
-                        <li>
-                            Shop
-                        </li>
-                    </a>
-                    <a href="Classes.html">
-                        <li>
-                            Classes
-                        </li>
-                    </a>
-                    <a href="AboutUs.html">
-                        <li>
-                            About us
-                        </li>
-                    </a>
-                    <a href="Contact.html">
-                        <li>
-                            Contact
-                        </li>
-                    </a>
-                    <a href="Cart.html">
-                        <li>
-                            Cart
-                        </li>
-                    </a>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="Shop-Coffee.html">Shop Coffee</a>
+                    </li>
+
+                    <li>
+                        <a href="Shop-Prints.html">Shop Prints</a>
+                    </li>
+
+                    <li>
+                        <a href="Classes.html">Classes</a>
+                    </li>
+
+                    <li>
+                        <a href="AboutUs.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="Contact.html">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="Cart.html">Cart</a>
+                    </li>
+                    <!--
+<a href="index.html">
+<li>
+Home
+</li>
+</a>
+<a href="Shop-Coffee.html">
+<li>
+Shop Coffee
+</li>
+</a>
+<a href="Shop-Prints.html">
+<li>
+Shop Prints
+</li>
+</a>
+<a href="Classes.html">
+<li>
+Classes
+</li>
+</a>
+<a href="AboutUs.html">
+<li>
+About us
+</li>
+</a>
+<a href="Contact.html">
+<li>
+Contact
+</li>
+</a>
+<a href="Cart.html">
+<li>
+Cart
+</li>
+</a>
+-->
                 </ul>
             </div>
         </div>
@@ -112,20 +153,28 @@
                     </div>
                     <div class="filtercol">
                         <ul>
-                            <li><h6>FILTER BY <img src="Images/drop-down-arrow.png"></h6>
+                            <li>
+                                <h6>
+                                    FILTER BY
+                                    <img src="Images/drop-down-arrow.png" alt="DropdownArrow" style="margin-left: 0.8em">
+                                </h6>
                                 <ul>
-                                    <label class="radiocontainer">Option 1
-                                        <input type="radio" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="radiocontainer">Option 2
-                                        <input type="radio" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label class="radiocontainer">Option 3
-                                        <input type="radio" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label>
+                                    <a href="Shop-Coffee.html">
+                                        <li>
+                                            <label class="radiocontainer">Coffee
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                    </a>
+                                    <a href="Shop-Accessories.html">
+                                        <li>
+                                            <label class="radiocontainer">Accessories
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </li>
+                                    </a>
                                 </ul>
                             </li>
                         </ul>
@@ -136,14 +185,14 @@
                         <a href="ProductDetails1.html">
                             <div class="container">
                                 <div class="top">
-                                    <img src="Images/coffeeproduct_1.jpg" alt="coffee bag"/>
+                                    <img src="Images/coffeeproduct_1.jpg" alt="coffee bag" />
                                 </div>
                                 <div class="bottom">
                                     <div class="left">
                                         <a href="ProductDetails1.html" style="text-decoration:none;">
                                             <div class="details">
                                                 <p style="margin: 0px">
-                                                    Coffee
+                                                    Coffee - 0% Roast
                                                 </p>
                                                 <p style="margin: 0px">
                                                     CAD $20
@@ -159,14 +208,14 @@
                         <a href="ProductDetails2.html">
                             <div class="container">
                                 <div class="top">
-                                    <img src="Images/coffeeproduct_2.jpg" alt="coffee bag"/>
+                                    <img src="Images/coffeeproduct_2.jpg" alt="coffee bag" />
                                 </div>
                                 <div class="bottom">
                                     <div class="left">
                                         <a href="ProductDetails2.html" style="text-decoration:none;">
                                             <div class="details">
                                                 <p style="margin: 0px">
-                                                    Coffee
+                                                    Coffee - 50% Roast
                                                 </p>
                                                 <p style="margin: 0px">
                                                     CAD $20
@@ -182,14 +231,14 @@
                         <a href="ProductDetails1.html">
                             <div class="container">
                                 <div class="top">
-                                    <img src="Images/coffeeproduct_3.jpg" alt="coffee bag"/>
+                                    <img src="Images/coffeeproduct_3.jpg" alt="coffee bag" />
                                 </div>
                                 <div class="bottom">
                                     <div class="left">
                                         <a href="ProductDetails1.html" style="text-decoration:none;">
                                             <div class="details">
                                                 <p style="margin: 0px">
-                                                    Coffee
+                                                    Coffee - 70% Roast
                                                 </p>
                                                 <p style="margin: 0px">
                                                     CAD $20
@@ -205,14 +254,14 @@
                         <a href="ProductDetails2.html">
                             <div class="container">
                                 <div class="top">
-                                    <img src="Images/coffeeproduct_4.jpg" alt="coffee bag"/>
+                                    <img src="Images/coffeeproduct_4.jpg" alt="coffee bag" />
                                 </div>
                                 <div class="bottom">
                                     <div class="left">
                                         <a href="ProductDetails1.htm2" style="text-decoration:none;">
                                             <div class="details">
                                                 <p style="margin: 0px">
-                                                    Coffee
+                                                    Coffee - 99% Roast
                                                 </p>
                                                 <p style="margin: 0px">
                                                     CAD $20
@@ -225,69 +274,10 @@
                         </a>
                     </div>
                 </div>
-                <div class="shopcoffeerow">
-                    <div class="wrapper">
-                        <div class="container">
-                            <div class="top">
-                                <img src="Images/coffeemachine_1.png" alt="coffee bag"/>
-                            </div>
-                            <div class="bottom">
-                                <div class="left">
-                                    <div class="details">
-                                        <h3 style="margin: 0px">
-                                            Single Brewer Machine
-                                        </h3>
-                                        <p style="margin: 0px">
-                                            CAD $250
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wrapper">
-                        <div class="container">
-                            <div class="top">
-                                <img src="Images/coffeemachine_2.png" alt="coffee bag"/>
-                            </div>
-                            <div class="bottom">
-                                <div class="left">
-                                    <div class="details">
-                                        <h3 style="margin: 0px">
-                                            Double Brewer Machine
-                                        </h3>
-                                        <p style="margin: 0px">
-                                            CAD $350
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wrapper">
-                        <div class="container">
-                            <div class="top">
-                                <img src="Images/TravelMug.jpg" alt="coffee bag"/>
-                            </div>
-                            <div class="bottom">
-                                <div class="left">
-                                    <div class="details">
-                                        <h3 style="margin: 0px">
-                                            Glass Travel Mug
-                                        </h3>
-                                        <p style="margin: 0px">
-                                            CAD $20
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <footer>
-            <div class="footer-col-30">
+            <div class="footer-col-25">
                 <p class="footer-section-title">
                     Location
                 </p>
@@ -298,7 +288,7 @@
                     Our new downtown Vancouver location is now open! In addition to delicious coffee and Lucky's Doughnuts, we are thrilled to reveal a new brunch menu.
                 </p>
             </div>
-            <div class="footer-col-30">
+            <div class="footer-col-25">
                 <p class="footer-section-title">
                     Contact
                 </p>
@@ -311,16 +301,24 @@
                     <strong>Phone:</strong> 604 123 1234
                 </p>
             </div>
-            <div class="footer-col-30">
+            <div class="footer-col-25">
                 <p class="footer-section-title">
-                    social media
+                    Social Media
                 </p>
                 <p>
                     Follow us on social media for more amazing content daily! We even have chances to win some amazing prizes such as free classes.
                 </p>
-                <img src="Images/facebook.svg" class="svg">
-                <img src="Images/instagram.svg" class="svg">
-                <img src="Images/twitter.svg" class="svg">
+                <img src="Images/facebook.svg" alt="FacebookIcon" class="svg">
+                <img src="Images/instagram.svg" alt="InstagramIcon" class="svg">
+                <img src="Images/twitter.svg" alt="TwitterIcon" class="svg">
+            </div>
+            <div class="footer-col-25">
+                <p class="footer-section-title">
+                    Style Guide
+                </p>
+                <p>
+                    You can checkout our styleguide <a href="Stylesheet.html" class="link">here.</a>
+                </p>
             </div>
         </footer>
     </body>
