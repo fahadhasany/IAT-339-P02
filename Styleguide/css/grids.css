@@ -364,7 +364,6 @@ text-align: right;
 /*Reference: http://jonibologna.com/flexbox-cheatsheet/*/
 .col-60 {
     flex: 60%;
-    padding-left: 10em; 
 }
 
 .col-75 {

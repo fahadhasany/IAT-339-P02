@@ -1206,6 +1206,11 @@ footer img{
         transform: scale(1.0, 1.0);
         opacity: 1;
     }
+    
+    #menuToggle input:empty ~ ul
+    {
+        display: none; 
+    }
 
     #menu a{
         color: black;
