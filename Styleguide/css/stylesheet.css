@@ -1203,14 +1203,17 @@ footer img{
     */
     #menuToggle input:checked ~ ul
     {
+/*        visibility: visible; */
         transform: scale(1.0, 1.0);
         opacity: 1;
     }
     
+/*
     #menuToggle input:empty ~ ul
     {
-        display: none; 
+        visibility: hidden; 
     }
+*/
 
     #menu a{
         color: black;
