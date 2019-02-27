@@ -537,7 +537,7 @@ border-bottom: 2px solid #B0D0D1;
 }
 
 .navBarLinks{
-    flex: 50%;
+    flex: 70%;
     text-align: right;
 
 }
@@ -607,7 +607,7 @@ transform: scaleX(1);
     color: #919EAB;
     text-decoration: none;
     transition: all 0.2s ease;
-    flex:1;
+    /* flex:30%; */
 }
 
 #logo:hover{
@@ -1014,9 +1014,9 @@ footer img{
         background-color: #FFF; */
     }
 
-    #logo{
+    /* #logo{
         flex:1;
-    }
+    } */
 
     .main-navigation{
         z-index: 10;
@@ -1168,13 +1168,13 @@ footer img{
     */
     #menu
     {
+        display: none;
         height: 100vh;
         position: absolute;
         margin: -5em 0 0 0;
         padding: 5em;
         padding-top: 130px;
         margin-left: -18em;
-
 
 
         background: #D4E5E6;
@@ -1204,14 +1204,15 @@ footer img{
     #menuToggle input:checked ~ ul
     {
 /*        visibility: visible; */
+        display: block;
         transform: scale(1.0, 1.0);
         opacity: 1;
     }
-    
+
 /*
     #menuToggle input:empty ~ ul
     {
-        visibility: hidden; 
+        visibility: hidden;
     }
 */
 
