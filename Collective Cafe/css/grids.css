@@ -671,6 +671,21 @@ iframe {
     }
 }
 
+.cart-button-row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 1000px){
+    .print-columns{
+        flex: 100%;
+        max-width: 100%;
+    }
+
 @media screen and (max-width: 600px){
     .print-columns{
         flex: 100%;
@@ -794,9 +809,19 @@ iframe {
   }
 }
 
-@media screen and (max-width:700px){
-  .contact-row{
-    flex-direction: column;
+@media screen and (max-width:100px){
+  .cart-button-row{
+    margin-top: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+}
+
+@media screen and (max-width:100px){
+  .cart-button-row{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .contact-form-container{

@@ -1234,3 +1234,12 @@ footer img{
         width:96%;
     }
 }
+
+@media screen and (max-width:500px){
+  .contact-form-container{
+    text-align: center;
+  }
+  .cart-form{
+    text-align: center;
+  }
+}
