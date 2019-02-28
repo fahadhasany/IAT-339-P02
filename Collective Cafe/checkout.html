@@ -1,241 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>
-        Collective Café - Checkout
-    </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>
+            Collective Café - Checkout
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Links-->
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <!--Reference: https://www.w3schools.com/css/css_icons.asp-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Reference: https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet">
+        <!--Links-->
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <!--Reference: https://www.w3schools.com/css/css_icons.asp-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Reference: https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/grids.css">
+        <link rel="stylesheet" href="css/grids.css">
 
-</head>
+    </head>
 
-<body>
-    <!--Nav Bar-->
-    <div class="navBar">
-        <a href="Index.html" id="logo">Collective Café</a>
-        <div class="navBarLinks">
-            <a href="Shop-Coffee.html" style="padding-left: 2em;">Shop Coffee</a>
-            <a href="Shop-Prints.html" style="padding-left: 2em;">Shop Prints</a>
-            <a href="Classes.html" style="padding-left: 2em;">Classes</a>
-            <a href="AboutUs.html" style="padding-left: 2em;">About Us</a>
-            <a href="Contact.html" style="padding-left: 2em;">Contact</a>
-            <a href="Cart.html" style="padding-left: 2em;">Cart</a>
+    <body>
+        <!--Nav Bar-->
+        <div class="navBar">
+            <a href="Index.html" id="logo">Collective Café</a>
+            <div class="navBarLinks">
+                <a href="Shop-Coffee.html" style="padding-left: 2em;">Shop Coffee</a>
+                <a href="Shop-Prints.html" style="padding-left: 2em;">Shop Prints</a>
+                <a href="Classes.html" style="padding-left: 2em;">Classes</a>
+                <a href="AboutUs.html" style="padding-left: 2em;">About Us</a>
+                <a href="Contact.html" style="padding-left: 2em;">Contact</a>
+                <a href="Cart.html" style="padding-left: 2em;">Cart</a>
+            </div>
+
+            <div id="menuToggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li>
+                        <a href="Index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="Shop-Coffee.html">Shop Coffee</a>
+                    </li>
+
+                    <li>
+                        <a href="Shop-Prints.html">Shop Prints</a>
+                    </li>
+
+                    <li>
+                        <a href="Classes.html">Classes</a>
+                    </li>
+
+                    <li>
+                        <a href="AboutUs.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="Contact.html">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="Cart.html">Cart</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <div id="menuToggle">
-            <input type="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-                <li>
-                    <a href="Index.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="Shop-Coffee.html">Shop Coffee</a>
-                </li>
-
-                <li>
-                    <a href="Shop-Prints.html">Shop Prints</a>
-                </li>
-
-                <li>
-                    <a href="Classes.html">Classes</a>
-                </li>
-
-                <li>
-                    <a href="AboutUs.html">About Us</a>
-                </li>
-
-                <li>
-                    <a href="Contact.html">Contact</a>
-                </li>
-
-                <li>
-                    <a href="Cart.html">Cart</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="checkout-row" style="padding: 2em; padding-left: 4em; padding-right: 4em">
-        <div class="col-75">
-            <div class="form-container">
-                <div class="checkout-row">
-                    <div class="form-col-50">
-                        <h3>
-                            Billing Information
-                        </h3>
-                        <label class="text-input-label">
-                            First Name
-                        </label>
-                        <input type="text" placeholder="John Appleseed">
-                        <label class="text-input-label">
-                            Email
-                        </label>
-                        <input type="text" placeholder="jappleseed@email.com">
-                        <label class="text-input-label">
-                            Address
-                        </label>
-                        <input type="text" placeholder="13450 104 Ave">
-                        <label class="text-input-label">
-                            City
-                        </label>
-                        <input type="text" placeholder="Surrey">
-                        <div class="prov-expire-row billingalignment">
-                            <div class="form-col-align">
-                                <label class="text-input-label">
-                                    Province
-                                </label>
-                                <input type="text" placeholder="BC">
+        <div class="checkout-row" style="padding: 2em; padding-left: 4em; padding-right: 4em">
+            <div class="col-75">
+                <div class="form-container">
+                    <div class="checkout-row">
+                        <div class="form-col-50">
+                            <h3>
+                                Billing Information
+                            </h3>
+                            <label class="text-input-label">
+                                First Name
+                            </label>
+                            <input type="text" placeholder="John Appleseed">
+                            <label class="text-input-label">
+                                Email
+                            </label>
+                            <input type="text" placeholder="jappleseed@email.com">
+                            <label class="text-input-label">
+                                Address
+                            </label>
+                            <input type="text" placeholder="13450 104 Ave">
+                            <label class="text-input-label">
+                                City
+                            </label>
+                            <input type="text" placeholder="Surrey">
+                            <div class="prov-expire-row billingalignment">
+                                <div class="form-col-align">
+                                    <label class="text-input-label">
+                                        Province
+                                    </label>
+                                    <input type="text" placeholder="BC">
+                                </div>
+                                <div class="form-col-align formboxspacing">
+                                    <label class="text-input-label">
+                                        Postal Code
+                                    </label>
+                                    <input type="text" placeholder="V3T 1V8">
+                                </div>
                             </div>
-                            <div class="form-col-align formboxspacing">
-                                <label class="text-input-label">
-                                    Postal Code
-                                </label>
-                                <input type="text" placeholder="V3T 1V8">
+                        </div>
+                        <div class="form-col-50">
+                            <h3>
+                                Payment Information
+                            </h3>
+                            <label class="text-input-label">
+                                Accepted Payment Methods
+                            </label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa"></i>
+                                <i class="fa fa-cc-amex"></i>
+                                <i class="fa fa-cc-mastercard"></i>
+                                <i class="fa fa-cc-discover"></i>
+                            </div>
+                            <label class="text-input-label">
+                                Cardholder Name
+                            </label>
+                            <input type="text" placeholder="John Appleseed">
+                            <label class="text-input-label">
+                                Card Number
+                            </label>
+                            <input type="text" placeholder="1234 1234 1234 1234">
+                            <div class="prov-expire-row billingalignment">
+                                <div class="form-col-align">
+                                    <label class="text-input-label">
+                                        Expiry Date
+                                    </label>
+                                    <input type="text" placeholder="MM/YY">
+                                </div>
+                                <div class="form-col-align formboxspacing">
+                                    <label class="text-input-label">
+                                        CVV
+                                    </label>
+                                    <input type="text" placeholder="123">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="form-col-50">
-                        <h3>
-                            Payment Information
-                        </h3>
-                        <label class="text-input-label">
-                            Accepted Payment Methods
-                        </label>
-                        <div class="icon-container">
-                            <i class="fa fa-cc-visa"></i>
-                            <i class="fa fa-cc-amex"></i>
-                            <i class="fa fa-cc-mastercard"></i>
-                            <i class="fa fa-cc-discover"></i>
-                        </div>
-                        <label class="text-input-label">
-                            Cardholder Name
-                        </label>
-                        <input type="text" placeholder="John Appleseed">
-                        <label class="text-input-label">
-                            Card Number
-                        </label>
-                        <input type="text" placeholder="1234 1234 1234 1234">
-                        <div class="prov-expire-row billingalignment">
-                            <div class="form-col-align">
-                                <label class="text-input-label">
-                                    Expiry Date
-                                </label>
-                                <input type="text" placeholder="MM/YY">
-                            </div>
-                            <div class="form-col-align formboxspacing">
-                                <label class="text-input-label">
-                                    CVV
-                                </label>
-                                <input type="text" placeholder="123">
-                            </div>
-                        </div>
+                    <div class="checkout-row" style="justify-content: center">
+
+
+                        <a href="Shop-Coffee.html" class="btn btn-secondary" style="margin-right: 1.5em"> Back </a>
+                        <a href="Index.html" class="btn btn-primary">Pay</a>
+
                     </div>
                 </div>
-                <div class="checkout-row" style="justify-content: center">
-
-
-                    <a href="Shop-Coffee.html" class="btn btn-secondary" style="margin-right: 1.5em"> Back </a>
-                    <a href="Index.html" class="btn btn-primary">Pay</a>
-
+            </div>
+            <div class="checkout-col-25">
+                <div class="checkout-container">
+                    <p class="checkout-total"> Cart
+                        <span class="text-float-right">
+                            <i class="fa fa-shopping-cart"></i>
+                            3
+                        </span>
+                    </p>
+                    <p>
+                        Coffee - Light Roast
+                        <span class="text-float-right">
+                            CAD 5.50
+                        </span>
+                    </p>
+                    <p>
+                        Coffee Grinder
+                        <span class="text-float-right">
+                            CAD 50.00
+                        </span>
+                    </p>
+                    <p>
+                        Travel Mug in Silver
+                        <span class="text-float-right">
+                            CAD 15.00
+                        </span>
+                    </p>
+                    <hr>
+                    <p class="checkout-total">
+                        Total
+                        <span class="text-float-right">
+                            CAD 70.50
+                        </span>
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="checkout-col-25">
-            <div class="checkout-container">
-                <p class="checkout-total"> Cart
-                    <span class="text-float-right">
-                        <i class="fa fa-shopping-cart"></i>
-                        3
-                    </span>
+
+        <footer>
+            <div class="footer-col-25">
+                <p class="footer-section-title">
+                    Location
+                </p>
+                <p class="footer-address">
+                    689 Thurlow St. Vancouver, BC Canada V6E 4M3
                 </p>
                 <p>
-                    Coffee - Light Roast
-                    <span class="text-float-right">
-                        CAD 5.50
-                    </span>
-                </p>
-                <p>
-                    Coffee Grinder
-                    <span class="text-float-right">
-                        CAD 50.00
-                    </span>
-                </p>
-                <p>
-                    Travel Mug in Silver
-                    <span class="text-float-right">
-                        CAD 15.00
-                    </span>
-                </p>
-                <hr>
-                <p class="checkout-total">
-                    Total
-                    <span class="text-float-right">
-                        CAD 70.50
-                    </span>
+                    Our new downtown Vancouver location is now open! In addition to delicious coffee and Lucky's Doughnuts, we are thrilled to reveal a new brunch menu.
                 </p>
             </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer-col-25">
-            <p class="footer-section-title">
-                Location
-            </p>
-            <p class="footer-address">
-                689 Thurlow St. Vancouver, BC Canada V6E 4M3
-            </p>
-            <p>
-                Our new downtown Vancouver location is now open! In addition to delicious coffee and Lucky's Doughnuts, we are thrilled to reveal a new brunch menu.
-            </p>
-        </div>
-        <div class="footer-col-25">
-            <p class="footer-section-title">
-                Contact
-            </p>
-            <p>
-                Have a question, comment or concern?
-            </p>
-            <p>
-                <strong>Email:</strong> collective@cafe.com
+            <div class="footer-col-25">
+                <p class="footer-section-title">
+                    Contact
+                </p>
+                <p>
+                    Have a question, comment or concern?
+                </p>
+                <p>
+                    <strong>Email:</strong> collective@cafe.com
                 <p>
                     <strong>Phone:</strong> 604 123 1234
                 </p>
-        </div>
-        <div class="footer-col-25">
-            <p class="footer-section-title">
-                Social Media
-            </p>
-            <p>
-                Follow us on social media for more amazing content daily! We even have chances to win some amazing prizes such as free classes.
-            </p>
-            <img src="Images/facebook.svg" alt="FacebookIcon" class="svg">
-            <img src="Images/instagram.svg" alt="InstagramIcon" class="svg">
-            <img src="Images/twitter.svg" alt="TwitterIcon" class="svg">
-        </div>
-        <div class="footer-col-25">
-            <p class="footer-section-title">
-                Style Guide
-            </p>
-            <p>
-                You can checkout our styleguide <a href="Stylesheet.html" class="link">here.</a>
-            </p>
-        </div>
-    </footer>
+            </div>
+            <div class="footer-col-25">
+                <p class="footer-section-title">
+                    Social Media
+                </p>
+                <p>
+                    Follow us on social media for more amazing content daily! We even have chances to win some amazing prizes such as free classes.
+                </p>
+                <img src="Images/facebook.svg" alt="FacebookIcon" class="svg">
+                <img src="Images/instagram.svg" alt="InstagramIcon" class="svg">
+                <img src="Images/twitter.svg" alt="TwitterIcon" class="svg">
+            </div>
+            <div class="footer-col-25">
+                <p class="footer-section-title">
+                    Style Guide
+                </p>
+                <p>
+                    You can checkout our styleguide <a href="Stylesheet.html" class="link">here.</a>
+                </p>
+                <p class="footer-section-title">
+                    Github
+                </p>
+                <p>
+                    You can checkout our git repo <a href="https://github.com/fahadhasany/IAT-339-P02" class="link">here.</a>
+                </p>
+            </div>
+        </footer>
 
-</body>
+    </body>
 
 </html>
