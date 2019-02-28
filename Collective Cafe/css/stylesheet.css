@@ -19,7 +19,7 @@ body{
     margin: 0px;
     font-family: 'Avenir',sans-serif;
     color: #38363B;
-/*    background-image: url("Images/HeroBanner.jpg");*/
+    /*    background-image: url("Images/HeroBanner.jpg");*/
     overflow-x: hidden;
 }
 
@@ -1015,8 +1015,8 @@ footer img{
     }
 
     /* #logo{
-        flex:1;
-    } */
+    flex:1;
+} */
 
     .main-navigation{
         z-index: 10;
@@ -1203,18 +1203,18 @@ footer img{
     */
     #menuToggle input:checked ~ ul
     {
-/*        visibility: visible; */
+        /*        visibility: visible; */
         display: block;
         transform: scale(1.0, 1.0);
         opacity: 1;
     }
 
-/*
+    /*
     #menuToggle input:empty ~ ul
     {
-        visibility: hidden;
-    }
-*/
+    visibility: hidden;
+}
+    */
 
     #menu a{
         color: black;
